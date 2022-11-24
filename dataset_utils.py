@@ -1,10 +1,36 @@
 import pandas as pd
-
-def DatasetTextGenerator(filepath):
-    org_df = pd.read_csv(
-        filepath, delimiter='\t',
-        names=['speaker', 'utterance', 'class']
-    )
     
-    for i, utterance in org_df['utterance'].iteritems():
-        yield i, utterance
+class DatasetParser:
+    
+    @staticmethod
+    def split_line(file):
+        line =  file.readline().strip()
+        if line:
+            return line.split("\t")
+        return line
+    
+    # @staticmethod
+    # def write_line(file, line):
+    #     file.write("\t".join(line) + "\n")
+    
+    @staticmethod
+    def read_dataset(filepath):        
+        with open(filepath) as file:
+            while True:
+                line = DatasetParser.split_line(file)
+                if not line:
+                    # File is over
+                    break
+                dialog = []
+                while(True):
+                    dialog.append(line)
+                    line = DatasetParser.split_line(file)
+                    if not line:
+                        df = pd.DataFrame(
+                                dialog, 
+                                columns=['speaker','utterance', 'emotion']
+                            )
+                        yield df
+                        break 
+        print('Finished file')
+    
