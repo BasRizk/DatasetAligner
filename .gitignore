@@ -1,3 +1,7 @@
+*.out
+CoMPM/
+eng_friends_subs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
