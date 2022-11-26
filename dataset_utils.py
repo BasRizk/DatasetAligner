@@ -9,10 +9,6 @@ class DatasetParser:
             return line.split("\t")
         return line
     
-    # @staticmethod
-    # def write_line(file, line):
-    #     file.write("\t".join(line) + "\n")
-    
     @staticmethod
     def read_dataset(filepath):        
         with open(filepath) as file:
@@ -34,3 +30,9 @@ class DatasetParser:
                         break 
         print('Finished file')
     
+    @staticmethod
+    def write_conv(conv_df, file, columns=['speaker', 'utterance', 'emotion']):
+        for _, row in conv_df[columns].iterrows():
+            file.write("\t".join(row) + "\n")
+        file.write('\n')
+        file.flush()

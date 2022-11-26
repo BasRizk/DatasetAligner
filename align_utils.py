@@ -1,39 +1,14 @@
-import re
+import jiwer
 import string
 import numpy as np
-import jiwer
 from difflib import SequenceMatcher
-from subtitles_reader import SubsFileDirectory, SubtitlesReader, SubtitleSnippet
-from tqdm import tqdm
-
-# jiwer_transformation = jiwer.Compose([
-#     jiwer.ToLowerCase(),
-#     jiwer.RemovePunctuation(),
-#     jiwer.RemoveWhiteSpace(replace_by_space=True),
-#     # jiwer.RemoveMultipleSpaces(),
-#     jiwer.RemoveMultipleSpaces(),
-#     jiwer.Strip(),
-#     # jiwer.ReduceToListOfListOfWords(word_delimiter=" "),
-#     jiwer.ReduceToListOfListOfWords(),
-
-# ]) 
+from subtitles_utils.subtitles_cut import SubtitleSnippet
 
 def compute_measures(ground_truth, hypothesis):
-    return jiwer.compute_measures(
-        ground_truth, hypothesis, 
-        # truth_transform=jiwer_transformation,
-        # hypothesis_transform=jiwer_transformation
-    )
+    return jiwer.compute_measures(ground_truth, hypothesis)
     
 def wer(ground_truth, hypothesis):
-    return jiwer.wer(
-        ground_truth, hypothesis, 
-        # truth_transform=jiwer_transformation,
-        # hypothesis_transform=jiwer_transformation
-    )
-
-# {'wer': 0.6470588235294118, 'mer': 0.6470588235294118, 'wil': 0.6470588235294117, 'wip': 0.35294117647058826, 'hits': 6, 'substitutions': 0, 'deletions': 11, 'insertions': 0}
-# {'wer': 0.6111111111111112, 'mer': 0.6111111111111112, 'wil': 0.6111111111111112, 'wip': 0.3888888888888889, 'hits': 7, 'substitutions': 0, 'deletions': 11, 'insertions': 0}
+    return jiwer.wer(ground_truth, hypothesis)
 
 translator_punc = str.maketrans(string.punctuation, ' '*len(string.punctuation))
 def clean_str(_str):
@@ -70,7 +45,6 @@ def generate_possible_utt_windows(snip: SubtitleSnippet, prev_match_win):
     for win in wins:
         win.apply(clean_str)
     return wins
-        
 
 def longest_common_wseq(str1, str2):
     str1, str2 = str1.split(), str2.split()
@@ -78,6 +52,7 @@ def longest_common_wseq(str1, str2):
     match = matcher.find_longest_match(0, len(str1), 0, len(str2))
     return ' '.join(str1[match.a: match.a + match.size])
 
+# Heuristics
 def is_match(text, utt, calc, hit_thres=0.9, debug=False):
     def is_misses_num_match():
         # misses == left-overs
@@ -95,7 +70,7 @@ def is_match(text, utt, calc, hit_thres=0.9, debug=False):
     num_misses_snip_utt = wcnt_txt - int(wcnt_utt*perc_snip_utt_hit)
 
     if debug:
-        print('debug')
+        print('Debug')
         breakpoint()
         
     if calc['hits'] > 0:
@@ -112,7 +87,7 @@ def is_match(text, utt, calc, hit_thres=0.9, debug=False):
         if wcnt_txt >= wcnt_utt:
             thres = (wcnt_utt/wcnt_txt)*ratio_lcs_utt
             if compute_measures(utt, sub_match_text)['mer'] <= thres:
-                breakpoint()
+                # breakpoint()
                 return True
 
         # close hits match with minor spelling mistakes
@@ -174,120 +149,3 @@ def cntw_str(_str):
 
 def cntw_str_list(str_list):
     return np.sum([cntw_str(s) for s in str_list])
-
-
-    
-class Aligner:
-    def __init__(self, subs_f_dir):
-        self.subs_f_dir = subs_f_dir
-        self.curr_sub_reader = self._get_cur_subs_reader()
-        
-        # for 1-look back in the past
-        self.sub_snippet_shifted = False
-        self.prev_sub_snippet = None
-        
-        self.curr_sub_snippet = self._get_cur_sub_snippet()
-            
-    def _get_subs_dir(self) -> SubsFileDirectory:
-        return self.subs_f_dir
-    
-    def _get_cur_subs_reader(self) -> SubtitlesReader:
-        # Ensure non-null subtitles file
-        if self._get_subs_dir().curr_subs_reader is None:
-            next(self.subs_f_dir)
-            next(self.subs_f_dir)
-            print(f'{self._get_subs_dir().curr_file_idx}: {self._get_subs_dir().get_curr_filename()}')
-        self.curr_sub_reader = self._get_subs_dir().curr_subs_reader
-        return self.curr_sub_reader
-    
-    def _get_next_subs_reader(self) -> SubtitlesReader:
-        self.curr_subs_reader =  next(self._get_subs_dir())
-        if self.curr_subs_reader:
-            print(f'{self._get_subs_dir().curr_file_idx}: {self._get_subs_dir().get_curr_filename()}')
-        return self.curr_subs_reader
-    
-    def _get_cur_sub_snippet(self) -> SubtitleSnippet:
-        if self.sub_snippet_shifted:
-            return self.prev_sub_snippet
-        # Ensure non-null subtitle-snippet
-        self.curr_sub_snippet = self._get_subs_dir().curr_subs_reader.curr_snippet
-        if not self.curr_sub_snippet:
-            self.curr_sub_snippet = next(self._get_subs_dir().curr_subs_reader)
-        return self.curr_sub_snippet
-    
-    def _get_next_sub_snippet(self) -> SubtitleSnippet:
-        if self.sub_snippet_shifted:
-            self.sub_snippet_shifted = False
-            return self._get_cur_sub_snippet()
-        self.prev_sub_snippet = self.curr_sub_snippet
-        self.curr_sub_snippet = next(self._get_subs_dir().curr_subs_reader)
-        return self.curr_sub_snippet
-    
-    def _shift_back_sub_snippet(self):
-        self.sub_snippet_shifted = True
-    
-    def get_text_start_point(self, text, verbose=False, debug=False):
-        text = clean_str(text) # TODO do it somewhere else
-        while True:
-            found_sub_snip = False
-            prev_wer = np.inf
-            match_win = None
-            prev_match_win = None
-            while True:
-                curr_snippet = self._get_cur_sub_snippet()
-                
-                # if 'Sorry. Thanks. You look good too.'.lower() in curr_snippet:
-                #     debug = True
-                #     verbose = True
-                #     breakpoint()
-
-                # if 'absolutely' in curr_snippet:
-                #     breakpoint()
-                    
-                match_win = get_matches(
-                    curr_snippet, text, prefix_match_win=match_win,
-                    verbose=verbose, debug=debug
-                )
-
-                if match_win or prev_match_win:
-                    curr_wer = 0
-                    if match_win:
-                        curr_wer = wer(text, match_win.u)
-                    
-                    # if (cntw_str(match) == cntw_str(text)) or\    
-                    if curr_wer >= prev_wer:
-                        found_sub_snip = True
-                        match_win = prev_match_win
-                        # Start next time from last matching snippet
-                        self._shift_back_sub_snippet()
-                        break
-                    prev_wer = wer(text, match_win.u)
-                    prev_match_win = match_win
-                    
-                if not self._get_next_sub_snippet():
-                    break
-                
-            if found_sub_snip:
-                return match_win
-            
-            if not self._get_next_subs_reader():
-                break
-            
-        return None 
-    
-    def find_alignment(self, conv_df, verbose=True, debug=True):
-        # verbose = False
-        matches = []
-        for idx, (spk, text, emotion) in conv_df.iterrows():
-            print('=> orig: ', text)
-            match = self.get_text_start_point(text, verbose=verbose, debug=debug)
-            matches.append(match)
-            
-            print('==='*12, f'  {idx}  ', '==='*12)
-            print('=> orig: ', text)
-            print('=> match:', match)
-            print('==='*30)
-            # out_file.write(text + '\n')
-            # out_file.write(match + '\n\n')
-            # out_file.flush()
-        return matches
