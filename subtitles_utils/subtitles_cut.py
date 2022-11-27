@@ -74,7 +74,10 @@ class SubtitleSnippet:
         return f'{self.id}\n' +\
             f'{str(self.timestamp)}\n' +\
             "\n".join(self.utts)
-            
+    
+    def __repr__(self) -> str:
+        return f'\nSubtitleSnippet\n{self.__str__()}\n'
+    
     def __contains__(self, item: str):
         return item.lower() in ' '.join(self.utts).lower()
     
@@ -121,12 +124,11 @@ class SubtitleWindow:
         self.u = utt
         
     def _calc_normal_timestamp(self):
-        ssts = self.ss.get_timestamp()
-        offset = ssts.get_width()*(self.sline/len(self.ss))
-        ss = ssts.start + offset
-        ests = self.es.get_timestamp()
-        offset = ests.get_width()*((self.eline + 1)/len(self.ss))
-        es = ests.start + offset 
+        def _portion(snippet: SubtitleSnippet, ratio):
+            ts = snippet.get_timestamp()
+            return ts.start + ts.get_width()*ratio
+        ss = _portion(self.ss, self.sline/len(self.ss))
+        es = _portion(self.es, ((self.eline + 1)/len(self.es)))
         return SubTimestamp(start_dt=ss, end_dt=es)
 
     def __str__(self):
@@ -158,5 +160,8 @@ class SubtitleWindow:
         self.u = func(self.u)
     
     def _calc_num_lines(self):
+        # Sum of lines except:
+        # - # lines left before sline
+        # - # lines left after the eline from es
         return sum(map(len, self.snippets)) -\
-            (self.sline) - (len(self.es) - self.eline + 1)
+            self.sline - len(self.es) - (self.eline + 1)
