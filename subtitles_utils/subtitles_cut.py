@@ -117,9 +117,11 @@ class SubtitleWindow:
                  s_line_idx, e_line_idx, 
                  utt):
         self.snippets = snippets
-        self.id = [s.id for s in self.snippets]
+        self.ids = [s.id for s in self.snippets]
         self.ss = snippets[0]
         self.es = snippets[-1]
+        assert self.ss.episode_title == self.es.episode_title
+        self.episode_title = self.ss.episode_title
         self.sline = s_line_idx
         self.eline = e_line_idx
         self.num_lines = self._calc_num_lines()

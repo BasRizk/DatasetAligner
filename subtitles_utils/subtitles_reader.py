@@ -3,19 +3,28 @@ import re
 from natsort import natsorted
 from .subtitles_cut import SubtitleSnippet
                 
+# TODO read all lines and keep track
 class SubtitlesReader:
     def __init__(self, filepath, episode_info):
         self.filepath = filepath
         self.episode_info = episode_info
         self.file = open(filepath, encoding='utf_8')
-        self.curr_snippet = None
         self.gen = self._generator()
-        
+        self.cur_snippet = self.__next__()
+    
+    def __str__(self):
+        return f'Episode-Title: {self.episode_info}\n' +\
+            f'Current Snippet Num: {self.cur_snippet.id}'
+    
+    def __repr__(self) -> str:
+        return f'SubtitleReader\n {self.__str__()}'
+    
     def __iter__(self):
         return self
     
     def __next__(self):
         return next(self.gen)
+
     
     # subs_file_lines_generator
     def _generator(self) -> SubtitleSnippet:
@@ -26,21 +35,15 @@ class SubtitlesReader:
             snip_id = int(re.sub(r'[^0-9]', '', lines[0]))
             snip_ts = lines[1]
             snip_utts = lines[2:]
-            self.curr_snippet =\
+            self.cur_snippet =\
                 SubtitleSnippet(self.episode_info, snip_id, snip_ts, snip_utts)
-            yield self.curr_snippet
+            yield self.cur_snippet
         self.destroy()
-        
-    def reset(self):
-        try:
-            self.destroy()
-        except:
-            print('File was never opened')
-        finally:
-            self.file = open(self.filepath)
-        
-    def destroy(self):
-        self.file.close()
+        self.cur_snippet = None
+        yield self.cur_snippet
+    
+    def get_cur_snippet(self):
+        return self.cur_snippet
     
     def read_until(self, end=''):
         lines = []
@@ -53,17 +56,39 @@ class SubtitlesReader:
             return lines
         return None
     
-    def get_curr_snippet_num(self):
-        return self.curr_snippet.get_id()
+    def get_cur_snippet_num(self):
+        return self.cur_snippet.get_id()
     
     def get_curr_timestamp(self):
-        return f'{self.curr_snippet.get_id()}'
+        return f'{self.cur_snippet.get_id()}'
     
     def get_curr_utterances(self):
-        return self.curr_snippet.utts
+        return self.cur_snippet.utts
     
     def get_filename(self):
         return os.path.basename(self.filepath)
+    
+    def reset(self):
+        try:
+            self.destroy()
+        except:
+            print('File was never opened')
+        finally:
+            self.file = open(self.filepath)
+        
+    def destroy(self):
+        self.file.close()
+
+    def shift_to_snippet(self, snippet_id):
+        if self.get_cur_snippet_num() > snippet_id:
+            self.reset()
+        while True:
+            cur_snip_id = self.get_cur_snippet_num()
+            if cur_snip_id == snippet_id:
+                break
+            self.__next__()
+            
+        
     
         
 class SubtitleFilenamePatternUndefined(Exception):
@@ -84,13 +109,23 @@ class SubsFileDirectory:
         self.episode_name_regex = episode_name_regex
         self.init_filepathes()
         self.dictionarize_episodes()
-        self.curr_subs_reader = None
-        self.curr_file_idx = None
+        self.cur_file_idx = 0
         self.gen = self._generator()
-        
+        next(self.gen)
+    
+    def __str__(self):
+        return f'Parent: {self.parent_dir}\n' +\
+            f'Current File Idx: {self.cur_file_idx}\n' +\
+            f'Current File:\n {self.subreaders[self.cur_file_idx]}' +\
+            f'Episode: {self.subreaders[self.cur_file_idx].episode_info}'
+
+    def __repr__(self) -> str:
+        return f'SubsFileDirector\n {self.__str__()}'
+    
     def destroy(self):
-        if self.curr_subs_reader:
-            self.curr_subs_reader.destroy()
+        if self.subreaders:
+            for subreader in self.subreaders:
+                subreader.destroy()
         self.__init__(self.parent_dir, self.episode_name_regex)
     
     def init_filepathes(self):
@@ -114,19 +149,18 @@ class SubsFileDirectory:
                 breakpoint()
             return None
                 
-        self.episode_to_filepath = {}
-        for i, filename in enumerate(self.get_subs_filenames()):
+        self.subreaders = []
+        self.episode_to_idx = {}
+        for idx, filename in enumerate(self.get_subs_filenames()):
             try:
-                season, episode = get_season_episode_num(filename)
-                self.episode_to_filepath[(season, episode)] = self.subs_filepathes[i]     
+                episode_title = get_season_episode_num(filename)
+                filepath = self.subs_filepathes[idx]
+                subsreader = SubtitlesReader(filepath, episode_title)   
+                self.subreaders.append(subsreader)
+                self.episode_to_idx[episode_title] = idx
             except:
                 breakpoint()
                 raise SubtitleFilenamePatternUndefined
-        
-        self.filepath_to_episode = {
-            v:k for k, v in self.episode_to_filepath.items()
-        }
-        
         
     def __iter__(self):
         return self
@@ -134,27 +168,28 @@ class SubsFileDirectory:
     def __next__(self):
         return next(self.gen)
     
+    def get_cur_subs_reader(self):
+        if self.cur_file_idx >= len(self.subreaders):
+            return None
+        return self.subreaders[self.cur_file_idx]
+    
     def _generator(self):
-        for i, filepath in enumerate(self.subs_filepathes):
-            if self.curr_subs_reader:
-                self.curr_subs_reader.destroy()
-            self.curr_subs_reader = SubtitlesReader(
-                filepath, self.filepath_to_episode[filepath]
-            )
-            self.curr_file_idx = i
-            yield self.curr_subs_reader
-            
+        while self.get_cur_subs_reader():
+            yield self.subreaders[self.cur_file_idx]
+            self.cur_file_idx += 1
+        yield None
+
+    def open_episode(self, episode_info, snippet_id=None):
+        self.cur_file_idx = self.episode_to_idx[episode_info]
+        cur_subs_reader = self.subreaders[self.cur_file_idx]
+        if snippet_id:
+            cur_subs_reader.shift_to_snippet(snippet_id)
+        return cur_subs_reader
+    
     def get_subs_filenames(self):
         return [os.path.basename(p) for p in self.subs_filepathes]
             
     def get_curr_filename(self):
-        return self.curr_subs_reader.get_filename()
+        return self.subreaders[self.cur_file_idx].get_filename()
     
     
-    def open_episode(self, episode_info):
-        if self.curr_subs_reader:
-            self.curr_subs_reader.destroy()
-        self.curr_subs_reader = SubtitlesReader(
-            self.episode_to_filepath[episode_info], episode_info
-        )
-        return self.curr_subs_reader

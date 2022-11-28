@@ -10,7 +10,8 @@ class DatasetParser:
         return line
     
     @staticmethod
-    def read_dataset(filepath):        
+    def read_dataset(filepath): 
+        dfs = []       
         with open(filepath) as file:
             while True:
                 line = DatasetParser.split_line(file)
@@ -26,9 +27,9 @@ class DatasetParser:
                                 dialog, 
                                 columns=['speaker','utterance', 'emotion']
                             )
-                        yield df
+                        dfs.append(df)
                         break 
-        print('Finished file')
+        return dfs
     
     @staticmethod
     def write_conv(conv_df, file, columns=['speaker', 'utterance', 'emotion'], translation=None):

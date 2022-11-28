@@ -86,7 +86,7 @@ class SubSubAligner(Aligner):
     def find_alignment(self, sub_wins, debug=False):
         # Set pointer over the relevant episode
         self.open_episode(sub_wins[0].ss.episode_title)
-
+        
         text_matches = []
         for sub_win in sub_wins:
             matched_text = self._get_corresponding_text(

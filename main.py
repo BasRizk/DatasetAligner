@@ -1,4 +1,5 @@
 import os
+from tqdm import tqdm
 from dataset_utils import DatasetParser
 from ds_sub_aligner import DSSubAligner
 from sub_sub_aligner import SubSubAligner
@@ -24,14 +25,14 @@ if __name__ == "__main__":
         db_sub_aligner = DSSubAligner(eng_subs_f_dir)
         sub_sub_aligner = SubSubAligner(arab_subs_f_dir)
         
-        next(org_data_gen)
-        next(org_data_gen)
-        next(org_data_gen)
+        # next(org_data_gen)
+        # next(org_data_gen)
+        # next(org_data_gen)
     
-        for conv_df in org_data_gen:
+        for conv_df in tqdm(org_data_gen):
             is_match, conv_df, eng_sub_matches, msg =\
                 db_sub_aligner.find_alignment(
-                    conv_df, verbose=False, debug=True, thres=0.2
+                    conv_df, verbose=False, debug=False, thres=0.2
                 )
                 
             print('Message:', msg)
@@ -41,7 +42,7 @@ if __name__ == "__main__":
                         eng_sub_matches, debug=False
                     )
                 
-                if sub_sub_matches:
+                if sub_sub_matches and len(sub_sub_matches) == len(conv_df):
                     DatasetParser.write_conv(
                         conv_df, trans_convs_file,
                         translation=sub_sub_matches
@@ -50,7 +51,7 @@ if __name__ == "__main__":
                 print('Error Sub-Sub Matching')
                 
             DatasetParser.write_conv(conv_df, failed_convs_file)
-            breakpoint()
+            # breakpoint()
             
         failed_convs_file.close()
             
