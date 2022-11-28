@@ -52,3 +52,7 @@ class Aligner:
         
     def open_episode(self, episode_info) -> SubtitlesReader:
         self._get_cur_subs_reader = self.subs_f_dir.open_episode(episode_info)
+        
+    def reset(self):
+        self.subs_f_dir.destroy()
+        self.__init__(self.subs_f_dir)

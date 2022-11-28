@@ -13,7 +13,8 @@ if __name__ == "__main__":
     
     successfull_matches = []
 
-    for filename in org_dataset_filepaths:
+    for filename in org_dataset_filepaths:    
+        trans_convs_file = open(f'{filename.split(".")[0]}_success.txt', mode='w', encoding='utf-8')
         failed_convs_file = open(f'{filename.split(".")[0]}_failed.txt', mode='w')
 
         org_data_gen =\
@@ -23,24 +24,33 @@ if __name__ == "__main__":
         db_sub_aligner = DSSubAligner(eng_subs_f_dir)
         sub_sub_aligner = SubSubAligner(arab_subs_f_dir)
         
+        next(org_data_gen)
+        next(org_data_gen)
+        next(org_data_gen)
+    
         for conv_df in org_data_gen:
             is_match, conv_df, eng_sub_matches, msg =\
                 db_sub_aligner.find_alignment(
-                    conv_df, debug=False
+                    conv_df, verbose=False, debug=True, thres=0.2
                 )
                 
-            sub_sub_matches =\
-                sub_sub_aligner.find_alignment(
-                    eng_sub_matches, debug=True
-                )
-            
-            
+            print('Message:', msg)
             if is_match:
-                breakpoint()
-            else:
-                print(msg)
-                DatasetParser.write_conv(conv_df, failed_convs_file)
+                sub_sub_matches =\
+                    sub_sub_aligner.find_alignment(
+                        eng_sub_matches, debug=False
+                    )
                 
+                if sub_sub_matches:
+                    DatasetParser.write_conv(
+                        conv_df, trans_convs_file,
+                        translation=sub_sub_matches
+                    )
+                    continue
+                print('Error Sub-Sub Matching')
+                
+            DatasetParser.write_conv(conv_df, failed_convs_file)
+            breakpoint()
             
         failed_convs_file.close()
             

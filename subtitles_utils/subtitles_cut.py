@@ -2,6 +2,7 @@ import re
 from typing import TypeVar, Type
 from datetime import datetime
 from typing import List
+from .utils import prepare_txt
 
 TIMECODE_PATTERN =\
     r'(\d{2}):(\d{2}):(\d{2}),(\d+) --> (\d{2}):(\d{2}):(\d{2}),(\d+)'
@@ -73,7 +74,7 @@ class SubtitleSnippet:
     def __str__(self):
         return f'{self.id}\n' +\
             f'{str(self.timestamp)}\n' +\
-            "\n".join(self.utts)
+            "\n".join(prepare_txt(self.utts))
     
     def __repr__(self) -> str:
         return f'\nSubtitleSnippet\n{self.__str__()}\n'
@@ -105,6 +106,8 @@ class SubtitleSnippet:
                 ending_windows.append(win)
         return begining_windows, ending_windows
 
+    def is_overlaping(self, __o:object):
+        return self.timestamp.is_overlaping(__o.timestamp)
 
 SnippetsList = List[SubtitleSnippet]
 
@@ -114,6 +117,7 @@ class SubtitleWindow:
                  s_line_idx, e_line_idx, 
                  utt):
         self.snippets = snippets
+        self.id = [s.id for s in self.snippets]
         self.ss = snippets[0]
         self.es = snippets[-1]
         self.sline = s_line_idx
@@ -131,15 +135,21 @@ class SubtitleWindow:
         es = _portion(self.es, ((self.eline + 1)/len(self.es)))
         return SubTimestamp(start_dt=ss, end_dt=es)
 
+    def __len__(self):
+        return self.num_lines
+    
     def __str__(self):
         res =\
             f'TIME:       {self.timestamp} with {self.num_lines} line(s)\n' +\
             f'From line   ({self.sline})  @  snippet ({self.ss.get_id()})\n' +\
             f'To   line   ({self.eline})  @  snippet ({self.es.get_id()})\n' +\
-            f'Org-Utt:    {self.org_u}\n'
+            f'Org-Utt:    {prepare_txt(self.org_u)}\n'
         if self.org_u != self.u:
-            res += f'Trans-Utt:  {self.u}\n'
+            res += f'Trans-Utt:  {prepare_txt(self.u)}\n'
         return res
+    
+    def __repr__(self) -> str:
+        return f'\nSubtitleWindow\n{self.__str__()}\n'
     
     def __add__(self, sub_win: Type[SubtitleWindow]):
         # ensure no errs, and snippets are consecutive
@@ -164,4 +174,8 @@ class SubtitleWindow:
         # - # lines left before sline
         # - # lines left after the eline from es
         return sum(map(len, self.snippets)) -\
-            self.sline - len(self.es) - (self.eline + 1)
+                self.sline -\
+                (len(self.es) - (self.eline + 1))
+            
+    def is_overlaping(self, __o:object):
+        return self.timestamp.is_overlaping(__o.timestamp)

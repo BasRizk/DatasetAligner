@@ -87,6 +87,11 @@ class SubsFileDirectory:
         self.curr_subs_reader = None
         self.curr_file_idx = None
         self.gen = self._generator()
+        
+    def destroy(self):
+        if self.curr_subs_reader:
+            self.curr_subs_reader.destroy()
+        self.__init__(self.parent_dir, self.episode_name_regex)
     
     def init_filepathes(self):
         self.subs_filepathes = []
