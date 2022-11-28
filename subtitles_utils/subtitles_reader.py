@@ -14,8 +14,8 @@ class SubtitlesReader:
     
     def __str__(self):
         return f'Episode-Title: {self.episode_info}\n' +\
-            f'Current Snippet Num: {self.cur_snippet.id}'
-    
+            f'Current Snippet:\n{self.cur_snippet}'
+        
     def __repr__(self) -> str:
         return f'SubtitleReader\n {self.__str__()}'
     
@@ -142,7 +142,7 @@ class SubsFileDirectory:
         def get_season_episode_num(filename):
             try:
                 for pattern in self.episode_name_regex:
-                        regex_app = re.search(pattern, filename)
+                        regex_app = re.search(pattern, filename.lower())
                         if regex_app:
                             return regex_app.groups()
             except:

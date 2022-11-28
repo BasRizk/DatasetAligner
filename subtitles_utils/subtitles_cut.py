@@ -50,6 +50,9 @@ class SubTimestamp:
     
     def is_overlaping(self, __o: object) -> bool:
         return not self < __o and not self > __o
+    
+    def is_spanning(self, __o: object) -> bool:
+        return self.end >= __o.end and self.start <= __o.start
             
             
     
