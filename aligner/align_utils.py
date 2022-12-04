@@ -1,5 +1,7 @@
+import re
 import jiwer
 import string
+import contractions
 import numpy as np
 from difflib import SequenceMatcher
 from subtitles_utils.subtitles_cut import SubtitleSnippet
@@ -12,7 +14,33 @@ def compute_measures(ground_truth, hypothesis):
 def wer(ground_truth, hypothesis):
     return jiwer.wer(ground_truth, hypothesis)
 
+
+"""
+Cleaning word
+
+wsubs_pattern based on:
+- https://stackoverflow.com/questions/14156473/can-you-write-a-str-replace-using-dictionary-values-in-python
+
+"""
+word_substituations = {
+    'doin': 'doing',
+    "c'mon": 'come on',
+    "ya": 'you',
+    'in a sec': 'in a second'
+}
+
+wsubs_pattern = r'\b({})\b'.format(
+    '|'.join(sorted(
+        re.escape(k) 
+        for k in word_substituations
+    ))
+)
+
+def make_defined_substitutions(_str):
+    return re.sub(wsubs_pattern, lambda m: word_substituations.get(m.group(0)), _str, flags=re.IGNORECASE)
+    
 translator_punc = str.maketrans(string.punctuation, ' '*len(string.punctuation))
+
 def clean_str(_str):
     def remove_cons_dup(_str):
         tokens = _str.split()
@@ -23,7 +51,10 @@ def clean_str(_str):
                 continue
             updated_tokens.append(t)
         return ' '.join(updated_tokens)
-    _str = _str.translate(translator_punc).strip().lower()
+    _str = _str.lower()
+    _str = contractions.fix(_str)
+    _str = make_defined_substitutions(_str)
+    _str = _str.translate(translator_punc).strip()
     _str = remove_cons_dup(_str)
     return _str
 
