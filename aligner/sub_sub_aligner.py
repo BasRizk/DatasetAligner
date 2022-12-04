@@ -1,25 +1,29 @@
-from aligner import Aligner
-from align_utils import np
+import sys, os
+sys.path.insert(0, os.path.abspath('..'))
 from subtitles_utils.subtitles_cut import SubtitleSnippet, SubtitleWindow
-        
+from subtitles_utils.utils import prepare_txt
+  
+from .aligner import Aligner
+
+
 class SubSubAligner(Aligner):
     
     def _get_overlapping_snippets(self, sub_win: SubtitleWindow, debug):
         overlapping_matches = []
-        while self._get_cur_sub_snippet():
+        while self._get_cur_snippet():
             # if debug:
             #     print('\n Current Snippet:\n', cur_snippet)
             
             # Get overlapping subtitle snippets
-            if sub_win.is_overlaping(self._get_cur_sub_snippet()):
-                overlapping_matches.append(self._get_cur_sub_snippet())
+            if sub_win.is_overlaping(self._get_cur_snippet()):
+                overlapping_matches.append(self._get_cur_snippet())
             elif len(overlapping_matches) > 0:
-                self._shift_back_sub_snippet()
+                self._shift_back_snippet()
                 break
             # elif debug:
             #     breakpoint()
             
-            self._get_next_sub_snippet()
+            self._get_next_snippet()
             
         return overlapping_matches
     
@@ -78,7 +82,7 @@ class SubSubAligner(Aligner):
                 
             return matched_text
         else:
-            print('Failed to find any overlapping snippets with snippet')
+            print('Failed to find any overlapping snippets with snippet; Using Org subs')
             # breakpoint()
             # Return for now the text as is in English (Assuming it refers to sounds!)
             return sub_win.u 
@@ -94,6 +98,9 @@ class SubSubAligner(Aligner):
             matched_text = self._get_corresponding_text(
                 sub_win, debug=debug
             )
+            # print(sub_win.u)
+            # print(prepare_txt(matched_text))
+            # breakpoint()
             if matched_text == sub_win.u:
                 if self.most_recent_successful_snippet:
                     self.open_episode(
@@ -105,7 +112,6 @@ class SubSubAligner(Aligner):
             text_matches.append(matched_text)
          
          
-        # from subtitles_utils.utils import prepare_txt
         # print([prepare_txt(t) for t in text_matches])
         # breakpoint()
 

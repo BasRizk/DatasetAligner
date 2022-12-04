@@ -75,7 +75,8 @@ class SubtitleSnippet:
         return self.timestamp
     
     def __str__(self):
-        return f'{self.id}\n' +\
+        return f'Episode: {self.episode_title}\n' +\
+            f'{self.id}\n' +\
             f'{str(self.timestamp)}\n' +\
             "\n".join(prepare_txt(self.utts))
     
@@ -145,6 +146,7 @@ class SubtitleWindow:
     
     def __str__(self):
         res =\
+            f'Episode: {self.episode_title}\n' +\
             f'TIME:       {self.timestamp} with {self.num_lines} line(s)\n' +\
             f'From line   ({self.sline})  @  snippet ({self.ss.get_id()})\n' +\
             f'To   line   ({self.eline})  @  snippet ({self.es.get_id()})\n' +\

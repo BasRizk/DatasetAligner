@@ -1,8 +1,8 @@
 import os
 from tqdm import tqdm
 from dataset_utils import DatasetParser
-from ds_sub_aligner import DSSubAligner
-from sub_sub_aligner import SubSubAligner
+from aligner.ds_sub_aligner import DSSubAligner
+from aligner.sub_sub_aligner import SubSubAligner
 from subtitles_utils.subtitles_reader import SubsFileDirectory
 
 if __name__ == "__main__":
@@ -25,17 +25,13 @@ if __name__ == "__main__":
         db_sub_aligner = DSSubAligner(eng_subs_f_dir)
         sub_sub_aligner = SubSubAligner(arab_subs_f_dir)
         
-        # next(org_data_gen)
-        # next(org_data_gen)
-        # next(org_data_gen)
-    
         for conv_df in tqdm(org_data_gen):
             is_match, conv_df, eng_sub_matches, msg =\
                 db_sub_aligner.find_alignment(
-                    conv_df, verbose=False, debug=False, thres=0.2
+                    conv_df, verbose=False, debug=False, thres=0.3
                 )
-                
-            print('Message:', msg)
+            
+            print('\nMessage:', msg)
             if is_match:
                 sub_sub_matches =\
                     sub_sub_aligner.find_alignment(
