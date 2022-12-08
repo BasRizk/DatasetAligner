@@ -35,7 +35,10 @@ class DatasetParser:
     def write_conv(conv_df, file, columns=['speaker', 'utterance', 'emotion'], translation=None):
         if translation:
             conv_df['utterance'] = translation
+            
+
         for _, row in conv_df[columns].iterrows():
-            file.write("\t".join(row) + "\n")
-        file.write('\n')
+            lines = "\t".join(row) + "\n"
+        lines += '\n'
+        file.writelines(lines)
         file.flush()
