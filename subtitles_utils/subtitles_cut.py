@@ -60,14 +60,17 @@ class SubTimestamp:
 SubtitleWindow = TypeVar('SubtitleWindow', bound='SubtitleWindow')
 
 class SubtitleSnippet:
-    def __init__(self, episode_title, num, timecode, utterances):
+    def __init__(self, episode_title, num, id, timecode, utterances):
         self.episode_title = episode_title
-        self.id = num
+        self.num = num
+        self.id = id
         self.timestamp = SubTimestamp(subtitle_timecode=timecode)
         self.utts = utterances
         self.windows = self._calc_possible_utt_windows()
         self.bwins, self.ewins = self._get_begin_end_wins()
         
+    def get_num(self):
+        return self.num
     def get_id(self):
         return self.id
     
@@ -76,7 +79,7 @@ class SubtitleSnippet:
     
     def __str__(self):
         return f'Episode: {self.episode_title}\n' +\
-            f'{self.id}\n' +\
+            f'id: {self.id}, num: {self.num}\n' +\
             f'{str(self.timestamp)}\n' +\
             "\n".join(prepare_txt(self.utts))
     
@@ -132,6 +135,8 @@ class SubtitleWindow:
         self.timestamp = self._calc_normal_timestamp()
         self.org_u = utt
         self.u = utt
+        self.matching_text = ''
+
         
     def _calc_normal_timestamp(self):
         def _portion(snippet: SubtitleSnippet, ratio):
@@ -148,11 +153,12 @@ class SubtitleWindow:
         res =\
             f'Episode: {self.episode_title}\n' +\
             f'TIME:       {self.timestamp} with {self.num_lines} line(s)\n' +\
-            f'From line   ({self.sline})  @  snippet ({self.ss.get_id()})\n' +\
-            f'To   line   ({self.eline})  @  snippet ({self.es.get_id()})\n' +\
-            f'Org-Utt:    {prepare_txt(self.org_u)}\n'
+            f'From line   ({self.sline})  @  snippet ({self.ss.get_id()}, {self.ss.get_num()})\n' +\
+            f'To   line   ({self.eline})  @  snippet ({self.es.get_id()}, {self.ss.get_num()})\n' +\
+            f'Utt:    {prepare_txt(self.org_u)}\n'
         if self.org_u != self.u:
-            res += f'Trans-Utt:  {prepare_txt(self.u)}\n'
+            res += f'Clean-Utt:  {prepare_txt(self.u)}\n'
+        res += f'matching_text: {self.matching_text}'
         return res
     
     def __repr__(self) -> str:

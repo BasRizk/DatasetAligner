@@ -23,17 +23,21 @@ class SubtitlesReader:
         
     def read_snippets(self):
         self.file = open(self._filepath, encoding='utf_8')
+        snip_id = 1
         snippets = []
         while True:
             lines = self.read_until(end='')
             if lines is None:
                 break
-            snip_id = int(re.sub(r'[^0-9]', '', lines[0]))
+            snip_num = int(re.sub(r'[^0-9]', '', lines[0]))
             snip_ts = lines[1]
             snip_utts = lines[2:]
-            snippets.append(
-                SubtitleSnippet(self._episode_info, snip_id, snip_ts, snip_utts)
-            )
+            isSkip = sum(['♪' in u for u in snip_utts])
+            if not isSkip:
+                snippets.append(
+                    SubtitleSnippet(self._episode_info, snip_num, snip_id, snip_ts, snip_utts)
+                )
+                snip_id += 1
         self.file.close()
         return snippets
    
@@ -156,7 +160,7 @@ class SubsFileDirectory:
             try:
                 episode_title = get_season_episode_num(filename)
                 filepath = self.subs_filepathes[idx]
-                subsreader = SubtitlesReader(filepath, episode_title)   
+                subsreader = SubtitlesReader(filepath, episode_title)
                 self.subreaders.append(subsreader)
                 self.episode_to_idx[episode_title] = idx
             except:
