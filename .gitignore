@@ -1,6 +1,11 @@
 *.out
 CoMPM/
+EMORY/
+GEN_EMORY/
 eng_friends_subs/
+arab_friends_subs/
+
+.vscode/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
