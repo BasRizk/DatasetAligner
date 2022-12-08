@@ -23,6 +23,11 @@ wsubs_pattern based on:
 
 """
 word_substituations = {
+    "y'serious": "you serious",
+    "'cause": "because",
+    "y'know": "you know",
+    "y's": "ys", 
+    'lizzie': 'lizzy',
     'doin': 'doing',
     "c'mon": 'come on',
     "ya": 'you',
