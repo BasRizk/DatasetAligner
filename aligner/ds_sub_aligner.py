@@ -72,6 +72,7 @@ def get_matches(snip, text, prefix_match_win=None, verbose=False, debug=False):
         ]
         argmax_utts = matched_utts_idx[np.argmax(scores)]
         match_win = test_wins[argmax_utts]
+        match_win.matching_text = text
     else:
         match_win = None
         
@@ -126,12 +127,13 @@ class DSSubAligner(Aligner):
 
             while self._get_cur_snippet():
                 # if self.is_debug_cond_sats(
-                #         # snippet_text='anyone who... stands erect... So what',
-                #         reg_text='stands erect'
+                #         snippet_text='BOOKCASE HERE',
+                #         # reg_text='stands erect'
                 #     ):
                 #     debug = True
                 #     verbose = True    
-                #     breakpoint()
+                # print(self._get_cur_snippet())
+                # breakpoint()
 
                 match_win = get_matches(
                     self._get_cur_snippet(), 
@@ -191,6 +193,7 @@ class DSSubAligner(Aligner):
                 if matches[i].episode_title != matches[i+1].episode_title or\
                     np.min(matches[i+1].ids) - np.max(matches[i].ids) > 1:
                     
+                    # print(self.subs_f_dir.get_curr_filename())
                     # breakpoint()
                     # start from right-after recent jumping snippet
                     self.open_episode(
@@ -215,18 +218,23 @@ class DSSubAligner(Aligner):
         postfix_msgs = []
         if len(best_matches) > len(matches):
             matches = best_matches
-            postfix_msgs = ['dropping snippets']
+            postfix_msgs.append('dropping snippets')
             
-        if matches and len(matches) == len(conv_df):
+        if matches:
+            # skip last match if does not match
+            if len(matches) < len(conv_df):
+                matches = matches[:-1]
+                conv_df = conv_df.iloc[:len(matches)]
+                
             conv_df['cleaned_utt'] = conv_df['utterance'].apply(lambda m: clean_str(m))
             conv_df['match_utt'] = list(map(lambda m: m.u, matches))
 
-            # breakpoint()
             # verify wer
             err = wer(
                 conv_df['cleaned_utt'].to_list(),
                 conv_df['match_utt'].to_list()
             )
+            
             if err < thres:
                 return True, conv_df, matches,\
                     f'Match :: WER: {err}; {"; ".join(postfix_msgs)}'
