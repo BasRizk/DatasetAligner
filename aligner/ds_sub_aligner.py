@@ -224,7 +224,7 @@ class DSSubAligner(Aligner):
             # skip last match if does not match
             if len(matches) < len(conv_df):
                 matches = matches[:-1]
-                conv_df = conv_df.iloc[:len(matches)]
+                conv_df = conv_df.iloc[:len(matches)].copy()
                 
             conv_df['cleaned_utt'] = conv_df['utterance'].apply(lambda m: clean_str(m))
             conv_df['match_utt'] = list(map(lambda m: m.u, matches))
