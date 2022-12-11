@@ -220,7 +220,7 @@ class DSSubAligner(Aligner):
             matches = best_matches
             postfix_msgs.append('dropping snippets')
             
-        if matches:
+        if len(matches) > 1:
             # skip last match if does not match
             if len(matches) < len(conv_df):
                 matches = matches[:-1]
@@ -234,7 +234,6 @@ class DSSubAligner(Aligner):
                 conv_df['cleaned_utt'].to_list(),
                 conv_df['match_utt'].to_list()
             )
-            
             if err < thres:
                 return True, conv_df, matches,\
                     f'Match :: WER: {err}; {"; ".join(postfix_msgs)}'
