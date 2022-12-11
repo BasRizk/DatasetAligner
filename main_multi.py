@@ -8,8 +8,14 @@ from aligner.ds_sub_aligner import DSSubAligner
 from aligner.sub_sub_aligner import SubSubAligner
 from subtitles_utils.subtitles_reader import SubsFileDirectory
 
+data_dir_prefix = 'EMORY'
+org_dataset_filepaths = [
+    "EMORY_train.txt",
+    # "EMORY_dev.txt", 
+    # "EMORY_test.txt"
+]
 
-n_jobs = 4
+n_jobs = 6
 write_thread_lock = threading.Lock()
 tools_queue_lock = threading.Lock()
 align_tools_queue = queue.Queue(n_jobs)
@@ -107,12 +113,6 @@ class AligningThread(threading.Thread):
 
 
 if __name__ == "__main__":
-    data_dir_prefix = 'EMORY'
-    org_dataset_filepaths = [
-        "EMORY_train.txt",
-        "EMORY_dev.txt", 
-        "EMORY_test.txt"
-    ]
     
     for i in tqdm(range(n_jobs), desc='Init AlignTools'):
         align_tools_queue.put_nowait(AlignTools())

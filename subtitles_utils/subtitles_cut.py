@@ -1,6 +1,6 @@
 import re
 from typing import TypeVar, Type
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List
 from .utils import prepare_txt
 
@@ -48,8 +48,23 @@ class SubTimestamp:
     def __ne__(self, __o: object) -> bool:
         return not(self.__eq__(self, __o))
     
-    def is_overlaping(self, __o: object) -> bool:
-        return not self < __o and not self > __o
+    def is_overlaping(self, __o: object, at_least_sec=0.25) -> bool:
+        x, y = (self, __o) if self.start < __o.start else (__o, self)
+        
+        if y.end < x.end:
+            # entirely contained
+            overlapping_value = y.end - x.start
+        else:
+            overlapping_value = x.end - y.start
+        
+        delta_time_thres = timedelta(microseconds=1000000*at_least_sec)
+        if overlapping_value >= delta_time_thres:
+            # they overlap
+            return True
+        else:
+            return False
+        
+        # return not self < __o and not self > __o
     
     def is_spanning(self, __o: object) -> bool:
         return self.end >= __o.end and self.start <= __o.start
@@ -113,8 +128,8 @@ class SubtitleSnippet:
                 ending_windows.append(win)
         return begining_windows, ending_windows
 
-    def is_overlaping(self, __o:object):
-        return self.timestamp.is_overlaping(__o.timestamp)
+    # def is_overlaping(self, __o:object):
+    #     return self.timestamp.is_overlaping(__o.timestamp)
 
 SnippetsList = List[SubtitleSnippet]
 

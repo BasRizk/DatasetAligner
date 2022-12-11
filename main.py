@@ -38,7 +38,7 @@ if __name__ == "__main__":
             if is_match:
                 sub_sub_matches =\
                     sub_sub_aligner.find_alignment(
-                        eng_sub_matches, debug=False
+                        eng_sub_matches, debug=True
                     )
                 
                 if sub_sub_matches is not None and len(sub_sub_matches) == len(conv_df):
