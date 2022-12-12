@@ -9,11 +9,24 @@ from aligner.sub_sub_aligner import SubSubAligner
 from subtitles_utils.subtitles_reader import SubsFileDirectory
 
 data_dir_prefix = 'EMORY'
+generation_folder = f"GEN_{'_'.join(data_dir_prefix.split('/'))}"
+if not os.path.exists(generation_folder):
+    os.mkdir(generation_folder)
+        
 org_dataset_filepaths = [
     "EMORY_train.txt",
     # "EMORY_dev.txt", 
     # "EMORY_test.txt"
 ]
+
+data_columns=['speaker','utterance', 'emotion']
+dropped_data_columns=[]
+data_lines_to_skip=0
+
+if 'MELD' in data_dir_prefix:
+    data_columns=['speaker','utterance', 'emotion', 'sentiment']
+    dropped_data_columns=['sentiment']
+    data_lines_to_skip=2
 
 n_jobs = 6
 write_thread_lock = threading.Lock()
@@ -118,13 +131,18 @@ if __name__ == "__main__":
         align_tools_queue.put_nowait(AlignTools())
     
     for filename in org_dataset_filepaths:    
-        convs_list = DatasetParser.read_dataset(os.path.join(data_dir_prefix, filename))
-
+        convs_list =\
+            DatasetParser.read_dataset(
+                os.path.join(data_dir_prefix, filename),
+                columns=data_columns,
+                dropped_columns=dropped_data_columns,
+                lines_to_skip=data_lines_to_skip,
+            )
         success_convs_file =\
-            open(f'GEN_EMORY/{filename.split(".")[0]}_success.txt',
+            open(f'{generation_folder}/{filename.split(".")[0]}_success.txt',
                     mode='w', encoding='utf-8')
         failed_convs_file =\
-            open(f'GEN_EMORY/{filename.split(".")[0]}_failed.txt', mode='w')
+            open(f'{generation_folder}/{filename.split(".")[0]}_failed.txt', mode='w')
             
         pbar = tqdm('Conversations', total=len(convs_list))
         

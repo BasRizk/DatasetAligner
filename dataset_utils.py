@@ -1,5 +1,6 @@
+import unidecode
 import pandas as pd
-    
+
 class DatasetParser:
     
     @staticmethod
@@ -10,9 +11,19 @@ class DatasetParser:
         return line
     
     @staticmethod
-    def read_dataset(filepath): 
+    def read_dataset(
+        filepath, 
+        columns=['speaker','utterance', 'emotion'],
+        dropped_columns=[],
+        lines_to_skip=0,
+        force_unicode=True,
+    ): 
+
         dfs = []       
-        with open(filepath) as file:
+        with open(filepath, encoding='utf-8') as file:
+            for _ in range(lines_to_skip):
+                file.readline()
+                
             while True:
                 line = DatasetParser.split_line(file)
                 if not line:
@@ -20,13 +31,17 @@ class DatasetParser:
                     break
                 dialog = []
                 while(True):
+                    if force_unicode:
+                        line = [unidecode.unidecode(t) for t in line]
                     dialog.append(line)
                     line = DatasetParser.split_line(file)
                     if not line:
                         df = pd.DataFrame(
                                 dialog, 
-                                columns=['speaker','utterance', 'emotion']
+                                columns=columns
                             )
+                        if dropped_columns:
+                            df = df.drop(dropped_columns, axis=1)
                         dfs.append(df)
                         break 
         return dfs
