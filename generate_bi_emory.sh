@@ -1,0 +1,1 @@
+python main.py -subtitles_a_dir 'eng_friends_subs' -subtitles_b_dir 'arab_friends_subs' -data_dir_prefix 'EMORY' -dataset_filenames "EMORY_train.txt" "EMORY_dev.txt" "EMORY_test.txt" -data_columns 'speaker' 'utterance' 'emotion'  

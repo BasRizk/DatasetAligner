@@ -1,0 +1,1 @@
+python main.py -subtitles_a_dir 'eng_friends_subs' -subtitles_b_dir 'arab_friends_subs' -data_dir_prefix 'MELD/dyadic' -dataset_filenames "MELD_train.txt" "MELD_dev.txt" "MELD_test.txt" -data_columns 'speaker' 'utterance' 'emotion' 'sentiment' -dropped_data_columns 'sentiment' -data_lines_to_skip 2
