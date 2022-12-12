@@ -187,25 +187,24 @@ class DSSubAligner(Aligner):
 
             # verify that snippets are consecutive 
             # TODO maybe consider threshold over timestamps instead of ids
-            for i in range(len(matches)-1):
+            if len(matches) > 1:
                 # one snippet difference or exactly the same
                 # TODO check batching lonely missing snippets right (higher probability)
-                if matches[i].episode_title != matches[i+1].episode_title or\
-                    np.min(matches[i+1].ids) - np.max(matches[i].ids) > 1:
+                if matches[-2].episode_title != matches[-1].episode_title or\
+                    np.min(matches[-1].ids) - np.max(matches[-2].ids) > 1:
                     
                     # print(self.subs_f_dir.get_curr_filename())
                     # breakpoint()
                     # start from right-after recent jumping snippet
                     self.open_episode(
-                        episode_info=matches[i].episode_title,
-                        snippet_id=np.max(matches[i].ids) + 1
+                        episode_info=matches[-2].episode_title,
+                        snippet_id=np.max(matches[-2].ids) + 1
                     )
                     if len(matches) > len(best_matches):
                         best_matches = matches
                     matches = []
                     idx = 0
                     self._unshift_snippet()
-                    break                    
             
             if verbose:
                 print('=> orig: ', text)
