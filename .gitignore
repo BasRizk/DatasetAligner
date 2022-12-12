@@ -1,9 +1,7 @@
 *.out
-CoMPM/
-EMORY/
-GEN_EMORY/
-eng_friends_subs/
-arab_friends_subs/
+datasets
+datasets_generated/BI_*/*/
+subtitles/
 
 .vscode/
 

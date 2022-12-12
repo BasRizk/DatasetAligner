@@ -1,0 +1,429 @@
+Franny	Hey, Monica!	‫- مرحباً يا "مونيكا".‬ ‫- مرحباً يا "فراني".‬	Joyful
+Monica Geller	Hey Frannie, welcome back! How was Florida?	‫- مرحباً يا "فراني".‬ ‫أهلاً بعودتك، كيف كانت "فلوريدا"؟‬	Neutral
+Franny	You had sex, didn't you?	‫- لقد أقمت علاقة، أليس كذلك؟‬	Neutral
+Monica Geller	How do you do that?	‫- كيف حزرت؟‬	Neutral
+Franny	Oh, I hate you, I'm pushing my Aunt Roz through Parrot Jungle and you're having sex! So? Who?	‫- إذاً من؟‬	Mad
+Monica Geller	You know Paul?	‫- أتعرفين "بول"؟‬	Neutral
+Franny	Paul the Wine Guy? Oh yeah, I know Paul.	‫"بول" رجل المشروب؟‬ ‫أجل، أنا أعرف "بول".‬	Neutral
+Monica Geller	You mean you know Paul like I know Paul?	‫أتعنين أنك تعرفين "بول" كما أعرفه أنا؟‬	Neutral
+Franny	Are you kidding? I take credit for Paul. Y'know before me, there was no snap in his turtle for two years.	‫أتمزحين؟ لديّ الشرف بمعرفة "بول"‬ ‫لم يكن قد مارس أي شيء‬ ‫مع أحد قبلي لمدة سنتين.‬	Neutral
+
+Ross Geller	Hi.	مرحباً -	Neutral
+Monica Geller	Hi.	مرحباً -	Neutral
+Ross Geller	So uh, Emily just went to the airport.	ذهبت (أيميلي) الان إلى المطار -	Scared
+Monica Geller	Oh. Why didn't you take her?	ذهبت (أيميلي) الان إلى المطار - لماذا لم تأخذها؟ -	Neutral
+Ross Geller	Eh, her-her uncle already had planned on doing it. And y'know, we-we said our good-byes this morning, so...	...لأن عمّها خطط للقيام بهذا، ونحن ...نحن ودّعنا بعضنا هذا الصباح، لذا	Scared
+Monica Geller	You must feel horrible. Hey! The guys have free porn!	لا بدّ أنك بحال مزرية يشاهد الشباب أفلاماً فاضحة مجانية	Powerful
+
+Chandler Bing	Hey! Hold on a minute, hold on a second. Do you think these pearls are nice?	.‏تمهّل قليلاً ‏أتجد هذه اللآلىء جميلة؟	Neutral
+Joey Tribbiani	I'd really prefer a mountain bike.	.‏في الواقع، أفضل دراجة هوائية	Joyful
+Chandler Bing	Janice's birthday is coming up, I want to get her something speacial. Come in here with me.	"‏اقترب عيد ميلاد "جانيس .‏وأريد أن أقدّم لها هدية مميزة .‏- ادخل معي !‏- مهلك	Peaceful
+Joey Tribbiani	Whoa, whoa, whoa, wait, whoa. Do you ah, want to get her something speacial, get her flowers, get her candy, get her gum, girls love gum.	‏إن كنت ستهديها هدية مميزة .‏فعليك بالورد أو بالسكاكر ،‏فلتهدها علكة .‏الفتيات يحبن العلكة	Peaceful
+Chandler Bing	That's a good idea, 'Dear Janice have a Hubba-Bubba birthday'. I would like to get her something serious.	!‏يا لها من فكرة جيدة ‏عزيزتي "جانيس" أتمنى لك .‏عيد مولد سعيداً وأنت تمضغين العلكة .‏أودّ أن أهديها شيئاً جدياً	Peaceful
+Joey Tribbiani	Oh, you want something serious. Y'know what you should do, you should get her one of those um, barium enemas. Those are dead serious.	،‏تريد شيئاً جدياً ‏أتعلم ما عليك فعله؟ ‏عليك أن تهديها إحدى .‏تلك الحقن الشرجية بالباريوم .‏إنها جدية بكل ما للكلمة من معنى	Peaceful
+Chandler Bing	All right. Look, I'm gonna go in here, and you don't buy me anything ever.	.‏سأدخل وإياك أن تهديني شيئاً	Peaceful
+Joey Tribbiani	No, no, you can't, you can't, okay, you can't, you can't buy her pearls, you just can't, you can't, you can't.	!‏كلا، لا يمكنك .‏لا يمكنك أن تشتري لها اللآلىء !‏- لا يمكنك ذلك فحسب ‏- لمَ لا؟	Scared
+Chandler Bing	Why not?!	‏- لمَ لا؟	Peaceful
+Joey Tribbiani	Oh God. Uh, okay, here's the thing, this is the thing, okay, the thing is...	.‏حسناً، إليك الحقيقة ...‏- الحقيقة هي...الأمر وما فيه ‏- ما الأمر؟	Scared
+Chandler Bing	What is the thing?	‏- ما الأمر؟	Peaceful
+Joey Tribbiani	Okay. I went down to the 'Mattress King' showroom and, and I saw Janice, kissing her ex-husband.	‏- ما الأمر؟ ‏ذهبت إلى صالة ."‏عرض "ملك الحشيات ‏ورأيت "جانيس" تتبادل .‏القبل مع زوجها السابق	Scared
+Chandler Bing	What?	‏- ماذا؟	Mad
+Joey Tribbiani	They were in his office.	‏- ماذا؟ .‏- كانا في مكتبه	Scared
+Chandler Bing	Well she, she wouldn't do that, she's with, she's with me.	،‏هي لن تقدم على ذلك أبداً .‏إنها مرتبطة بي	Sad
+Joey Tribbiani	I'm telling you man, I saw it.	.‏- لقد رأيتها يا رجل	Peaceful
+Chandler Bing	Yeah, well, you're wrong! Okay, you're wrong.	‏- لكنّك مخطىء، فهمت؟	Mad
+Joey Tribbiani	I'm not wrong! I wish I was. I'm sorry. Bet that barium enema doesn't sound so bad now, huh?	!‏- أنت مخطىء .‏- لست مخطئاً، ليتني كنت كذلك .‏أنا آسف ‏أراهن أن فكرة الحقنة الشرجية ‏بالباريوم لا تبدو سيئة الآن، صحيح؟	Powerful
+
+Paul the Wine Guy	Ever since she walked out on me, I, uh...	‫منذ أن هجرتني وأنا...‬	Sad
+Monica Geller	What?..... What, you wanna spell it out with noodles?	‫ماذا؟ ماذا؟‬ ‫هل تريد النطق بها مع الـ"نودلز"؟‬	Neutral
+Paul the Wine Guy	No, it's, it's more of a fifth date kinda revelation.	‫لا، لكنه سر يُباح به‬ ‫في الموعد الخامس.‬	Sad
+Monica Geller	Oh, so there is gonna be a fifth date?	‫- هل سيكون هناك موعد خامس؟‬	Neutral
+Paul the Wine Guy	Isn't there?	‫- أتودين هذا؟‬	Scared
+Monica Geller	Yeah... yeah, I think there is. -What were you gonna say?	‫نعم، نعم، أعتقد ذلك.‬ ‫ماذا كنت تقول؟‬	Neutral
+
+Rachel Green	Oh, this lipstick looks just great on you.	لون أحمر الشفاه يليق بك	Joyful
+Monica Geller	You look fabulous honey, you really do.	تبدين رائعة عزيزتي، تبدين رائعة	Joyful
+Phoebe Buffay	Yeah? Are you sure, really.	هل أنتما متأكدتان فعلاً من ذلك؟	Joyful
+Rachel Green	You see, you look beautiful. For god sakes, dim the lights.	تبدين جميلة أخفتي النور قليلاً بحق السماء	Scared
+Phoebe Buffay	I, I, I'm hideous.	!أبدو مخيفة	Sad
+Monica Geller	It's gonna be ok. Ryan's been under water. He's just gonna be so glad that you don't have barnicles on your butt.	سيجري اللقاء على ما يرام راين) أمضى فترة طويلة تحت الماء) سيسرّ كثيراً لعدم رؤية القشور على مؤخرتك	Neutral
+
+Phoebe Buffay	Can I please take these off? I swear I won't scratch.	انزعي القفازات من فضلك أعدك ألا أحك لا، إنني آسفة عزيزتي	Sad
+Rachel Green	No sorry hon, Monica's orders.	لا، إنني آسفة عزيزتي (هذه أوامر (مونيكا	Neutral
+Ryan	Well that wasn't easy.	لم يكن ذلك سهلاً	Neutral
+Ross Geller	Ok, dinner's on.	العشاء أصبح جاهزاً	Neutral
+Rachel Green	And there's a peach cobbler warming in the oven so the plate's gonna be hot but that shouldn't be a problem for you.	ثمة فطيرة بالدراق تسخن في الفرن لذا سيكون الطبق ساخناً إنما ذلك لن يشكل عائقاً لكما	Powerful
+Ross Geller	Alright you kids, bye now.	إلى اللقاء - إلى اللقاء -	Neutral
+Phoebe Buffay	Bye.	إلى اللقاء -	Neutral
+Ross Geller	Oh look, a low budget puppet show.	انظروا، هذا استعراض للدمى المتحركة	Joyful
+Phoebe Buffay	It's such a shame you can't see which finger I'm holding up.	يؤسفني أنك لا ترى أي إصبع أرفعه الآن	Powerful
+
+Monica Geller	Oh my God!	‫- يا للهول.‬	Mad
+Paul the Wine Guy	I know, I know, I'm such an idiot. I guess I should have caught on when she started going to the dentist four and five times a week. I mean, how clean can teeth get?	‫- أعرف، أعرف أنني مغفل.‬ ‫كان يجب أن أعرف حين بدأت تقصد‬ ‫طبيب الأسنان 4 و 5 مرات في الأسبوع.‬ ‫إلى أي مدى يمكن للمرء‬ ‫أن ينظف أسنانه؟‬	Sad
+Monica Geller	My brother's going through that right now, he's such a mess. How did you get through it?	‫أخي يمرّ بهذا الآن وهو في‬ ‫حالة مزرية، كيف تخطيت الأمر؟‬	Sad
+Paul the Wine Guy	Well, you might try accidentally breaking something valuable of hers, say her-	‫ربما يجب أن يحاول أن يكسر‬ ‫شيئاً قيّماً يخصها مثل...‬	Powerful
+Monica Geller	-leg?	‫- ساقها؟‬	Joyful
+
+Rachel Green	All right, y'know what, come on, do we really have to watch this while we eat?	هل يجب أن نشاهد هذا ونحن نأكل؟ - !لا! لا! لا! لا -	Powerful
+Chandler Bing	Oh no-no-no-no!	no	Sad
+Chandler Bing	We don't know what could make this go away.	لا نعرف ما الذي قد يجعلنا نفقد القناة	Scared
+Joey Tribbiani	Yeah, so no one touches the remote. And no one touches the TV!	نعم، إذاً لا أحد يلمس جهاز التحكّم ولا أحد يلمس التلفاز	Sad
+Chandler Bing	And no one touches the air around the TV!	ولا أحد يقارب الهواء المحيط بالتلفاز	Peaceful
+Joey Tribbiani	Imagine a protective porn bubble if you will, okay?	اعتبريها منطقة فاضحة محمية إن أردت	Mad
+Monica Geller	Well at least, I'm going to mute it.	أستطيع تخفيف الصوت على الاقل -	Powerful
+Chandler Bing	Oh no-no-no!	أستطيع تخفيف الصوت على الاقل - !لا! لا! لا! لا -	Sad
+Chandler Bing	We still have porn.	لا تزال المحطة موجودة	Scared
+
+Chandler Bing	Hey.	مرحباً - مرحباً -	Neutral
+Joey Tribbiani	Hey.	مرحباً - مرحباً -	Neutral
+Chandler Bing	I was just at the bank, and there was this really hot teller, and she didn't ask me to go do it with her in the vault.	كنت في المصرف وكان هناك أمينة صندوق جميلة جداً ولم تطلب مني أن أقيم علاقة معها في القبو	Powerful
+Joey Tribbiani	Same kind of thing happened to me! Woman pizza delivery guy come over, gives me the pizza, takes the money, and leaves!	حصل الأمر ذاته معي أتت المرأة التي تسلّم البيتزا أعطتني البيتزا، وأخذت المال وذهبت	Mad
+Chandler Bing	What, no, "Nice apartment, I bet the bedrooms are huge?"	أعطتني البيتزا، وأخذت المال وذهبت ألم تقل "يا لها من شقة جميلة "أراهن أن غرف النوم كبيرة؟	Peaceful
+Joey Tribbiani	Noo! Nothing!	لا، لا شيء من هذا	Scared
+Chandler Bing	Y'know what, we have to turn off the porn.	هل تعرف شيئاً؟ علينا أن نتوقّف عن مشاهدة الافلام الفاضحة	Peaceful
+Joey Tribbiani	I think you're right.	أظنّ أنك محقّ	Powerful
+Chandler Bing	All right, ready?	all right ready	Peaceful
+Joey Tribbiani	One.	لا بأس، هل أنت جاهز؟	Joyful
+Chandler Bing	Two.	لا بأس، هل أنت جاهز؟	Joyful
+Both	Three.	لا بأس، هل أنت جاهز؟ واحد، اثنان، ثلاثة	Neutral
+Joey Tribbiani	That's kinda nice.	هذا جميل نوعاً ما -	Joyful
+Chandler Bing	Yeah, that's kinda a relief.	هذا مريح نوعاً ما -	Joyful
+Joey Tribbiani	Yeah.	هذا مريح نوعاً ما - نعم	Neutral
+Chandler Bing	You wanna see if we still have it?	أتريد أن تعرف إذا ما زالت موجودة؟ -	Joyful
+Joey Tribbiani	Yeah.	نعم -	Neutral
+
+Joey Tribbiani	I can't believe what I'm hearing here.	‫- "لا أصدق ما أسمع"‬	Neutral
+Phoebe Buffay	I can't believe what I'm hearing here...	‫- "لا أصدق ما أسمع"‬	Joyful
+Monica Geller	What? I-I said you had a-	‫- ماذا، قلت إنك...‬ ‫- "ماذا، قلت إنك..."‬	Scared
+Phoebe Buffay	What I said you had...	‫- ماذا، قلت إنك...‬ ‫- "ماذا، قلت إنك..."‬	Joyful
+Monica Geller	Would you stop?	‫هلا توقفت.‬	Mad
+Phoebe Buffay	Oh, was I doing it again?	oh was i doing it again	Neutral
+#ALL#	Yes!	yes	Mad
+
+Ross Geller	So you guys having any luck getting rid of the entertainment center?	إذاً، هل يحالفكما الحظ فيما يتعلّق بالتخلّص من وحدة التسلية؟	Neutral
+Joey Tribbiani	Well, there were a couple of calls last night, but ah, I don't think any of them are gonna work out.	اتصل بعض الاشخاص البارحة لكن لا أظن أن ذلك سيفلح	Sad
+Chandler Bing	Yes, Joey has a very careful screening process. Apparently, not everyone is qualified to own wood and nails.	نعم، لدى (جوي) عملية تدقيق جدّية على ما يبدو، ليس الجميع مؤهّلاً لامتلاك خشب ومسامير	Neutral
+Phoebe Buffay	Stop it! Stop it! She keeps squirming, trying to get away! Just like when she was alive.	توقّفي، توقّفي، تحاول التملّص والهرب كل الوقت، تماماً كما عندما كانت حيّة	Mad
+Ross Geller	So Pheebs, how long is your mom gonna be with us?	إذاً، (فيبز)، كم هي المدة التي ستقضيها أمك معنا؟	Joyful
+Phoebe Buffay	Well, I'm not sure. I mean, I guess until she y'know, gets used to the fact that there's y'know, a new mom. Y'know, I think she's worried that y'know, she's gonna, she's gonna be replaced. Well, that's not gonna happen is it? Noo. Okay, I have to return a call in the other room.	لست متأكدة، حتى تعتاد على فكرة أن هناك أمّاً جديدة إنها قلقة لانها تظنّ أنها قد تستبدل هذا لن يحصل، أليس كذلك؟ لا حسناً، عليّ الاتصال من الغرفة الاخرى - لمَ لا تستعملي الهاتف هنا؟ -	Peaceful
+Monica Geller	Why can't you use the phone in here?	لمَ لا تستعملي الهاتف هنا؟ - "أنا أتصل بأمّ معيّنة على الـ"ش.ا.ط.ىء	Neutral
+Phoebe Buffay	Well, I'm returning a call from a certain mom at the B-E-A-C-H. I just spelled the wrong word.	"أنا أتصل بأمّ معيّنة على الـ"ش.ا.ط.ىء قمت بتهجئة الكلمة الخطأ	Powerful
+Ross Geller	So, guys, am I crazy, or does Phoebe's mom remind anyone of a cat?	يا رفاق، هل أنا مجنون أم أن أمّ (فيبي) تذكّر أحداً بالهرّة؟	Powerful
+Monica Geller	Ross, don't start.	روس)، لا تبدأ) -	Joyful
+Ross Geller	Come on, you-you can't tell me you actually believe that-that there's a woman inside that cat!	بحقكم - لا تقولوا لي إنكم تصدّقون فعلاً أن ثمة امرأة داخل الهرة	Sad
+Rachel Green	I believe it.	أنا أصدّق ذلك	Peaceful
+Ross Geller	No you don't.	هذا غير صحيح -	Peaceful
+Rachel Green	Yes, I do.	بلى -	Joyful
+Ross Geller	No you do-y'know what, you're not gonna suck me into this.	هذا غير صحيح -	Mad
+
+Joey Tribbiani	You and Milton have to join us on the boat. Karen'll pack a lunch, you'll bring the kids, we'll make a day of it.	يجب أن تنضمي إلينا مع (ميلتون) على الباخرة كارين) ستعدّ الغداء) واجلبي الأولاد، سنتسلى كثيراً	Joyful
+Jeannie	Oh, that sounds lovely. We're gonna have to set that up. Oh, I better get back. Hope the baby feels better.	واجلبي الأولاد، سنتسلى كثيراً تبدو الفكرة رائعة يجب أن نفعل ذلك من الأفضل أن أعود آمل أن تشعر الطفلة بتحسن	Joyful
+Joey Tribbiani	Oh, thanks, thanks. Bye bye Jeannie.	(شكراً، إلى اللقاء (جانين - (إلى اللقاء يا (جوزيف -	Neutral
+Jeannie	Bye bye Joey.	(إلى اللقاء يا (جوزيف -	Neutral
+Joey Tribbiani	What a phony.	!يا لها من مخادعة	Mad
+Chandler Bing	Well, I'm sure you'll teach her a lesson when she steps off the dock onto nothing. Hey Mr. Douglas.	أنا واثق أنك ستلقنها درساً عندما ستدخل إلى رصيف السفن الوهمية !(سيد (دوغلاس -	Mad
+Joey Tribbiani	Sir.	!سيدي -	Neutral
+Mr. Douglas	Uh, listen Bing, I received your memo. So, we're not gonna receive the systems report until next Friday?	(لقد تلقيت مذكرتك يا (بينغ لن نرى تقرير الأنظمة قبل يوم الجمعة المقبل؟	Mad
+Chandler Bing	Well the people in my group wanna spend the holiday weekend with their families.	زملائي في المجموعة يودون تمضية عطلة الأسبوع مع عائلاتهم	Neutral
+Mr. Douglas	I have a family, I'm gonna be here.	لديّ عائلة لكنني سأكون هنا	Peaceful
+Joey Tribbiani	Yeah Bing, what's that about?	نعم (بينغ)، ما الأمر؟	Neutral
+Chandler Bing	It's about cutting my people a little slack, ya know, for morale. Look, if you wanna see some rough numbers, I can get them to you by Wednesday.	يتعلق الأمر بوضع حد لإهمال زملائي لرفع معنوياتهم إن أردت أن ترى أرقاماً تقريبية أستطيع أن أسلمك إياها يوم الأربعاء	Powerful
+Mr. Douglas	Rough numbers?	أرقام تقريبية؟	Mad
+Joey Tribbiani	This company was not built on rough numbers. Am I right Mr. Douglas.	هذه الشركة ليست مبنية على أرقام تقريبية ألست محقاً سيد (دوغلاس)؟	Neutral
+Mr. Douglas	Have the final numbers on my desk by Tuesday.	ضع الأرقام النهائية على مكتبي يوم الثلاثاء	Powerful
+Chandler Bing	Uh, if you say so sir.	كما تشاء سيدي	Neutral
+Joey Tribbiani	Joseph's good, isn't he?	جوزيف) جيد، أليس كذلك؟)	Joyful
+Chandler Bing	Well, I'm going to kill you.	سوف أقتلك	Mad
+Joey Tribbiani	Hey, hey, I just figure Joseph's the kinda guy that likes to mix it up. Ya know, get in there, ruffle some feathers.	(تصورت أن (جوزيف يحب إثارة التشويق الدخول ثم إثارة بعض المواضيع	Joyful
+Chandler Bing	Why?	لماذا؟	Neutral
+Joey Tribbiani	Look, I'm sorry but that's what Joseph does, ok. If you try to pull somethin', he'll call you on it. 'What're you tryin' to pull,' he'll say.	إنني آسف (لكن هذا ما يفعله (جوزيف إذا حاولت ارتكاب سوء ما سيكتشف أمرك "سيقول "ماذا تحاول أن ترتكب؟	Powerful
+
+Phoebe Buffay	Come in.	!ادخل	Neutral
+Ryan	Hey baby, I'm back...	لقد عدت يا حبيبتي - مرحباً (راين)، كيف حالك؟ -	Peaceful
+Phoebe Buffay	Hey Ryan, what's up?	مرحباً (راين)، كيف حالك؟ -	Neutral
+Ryan	What's goin' on?	ما الأمر؟	Neutral
+Phoebe Buffay	Well, no no, you have to stay back. I, I have the pox.	لا، ابقَ بعيداً "أنا مصابة بداء "الجدري	Sad
+Ryan	Chicken or small?	جدري الماء" أو سواها؟"	Neutral
+Phoebe Buffay	Chicken. Which is so ironic considering I'm a vegetarian.	!"جدري الماء" هذا مثير للسخرية لأنني نباتية	Joyful
+Ryan	Why aren't you at home in bed?	لمَ لست في سريرك في المنزل؟	Neutral
+Phoebe Buffay	'Cause my, my grandmother's never had chicken pox. Please, please tell me you have, 'cause oh my God, I forgot how cute you are.	لأن جدتي لم تصب يوماً "بداء "الجدري أرجوك، قل لي إنك أصبت به سابقاً يا إلهي، نسيت كم أنت رائع	Joyful
+Ryan	I'm sorry, I never had 'em.	!إنني آسف لم أصب بـ"الجدري" من قبل	Scared
+
+Chandler Bing	Wow! That ripped! That ripped real nice!	لقد تمزّقت سترتي، تمزّقت كثيراً	Joyful
+Joey Tribbiani	How many times do I have to tell you! Ya, turn and sliiiide! Y'know, turn and slide.	كم مرة يجب أن أقول لك يجب أن تخرج جانبياً، هل تفهم؟ جانبياً	Mad
+Chandler Bing	You don't turn and slide, you throw it out! I'm tired of having to get a tetanus shot every time I get dressed!	لا، لا تخرج جانبياً بل ترميها خارجاً تعبت من أن أصاب كلّما لبست ثيابي -	Mad
+Joey Tribbiani	Look, we're not throwing it out! I built this thing with my own hands!	لن نرميها خارجاً، لقد صنعتها بيديّ -	Mad
+Chandler Bing	All right, how about we, how 'bout we sell it.	حسناً، ماذا لو بعناها؟	Neutral
+Joey Tribbiani	All right. But, you're gonna have to tell them.	حسناً، لكن أنت من سيخبرهما بذلك	Sad
+Chandler Bing	Do you mind if we stick you in another cabinet? They seem all right with it!	هل تمانعان لو رميناكما في صندوق آخر؟ لا يمانعان ذلك	Neutral
+
+Chip Matthews	Here, we are.	ها نحن -	Neutral
+Monica Geller	Oh my God! You still have the Chipper!	!يا للهول - (ما زلت تملك (التشابر -	Joyful
+Chip Matthews	The what?	the what	Scared
+Monica Geller	That's what we used to call your ah, your motorcycle in high school. Y'know how a motorcycle is a Chopper, and you're Chip. Nevermind.	هكذا كنا نسمّي دراجتك في المدرسة "إنها "تشابر (ويملكها شخص يدعى (تشيب	Peaceful
+
+Rachel Green	Call her! Call her now!	.‏اتصل بها، اتصل بها الآن	Joyful
+Chandler Bing	Multiple, so many paper cuts.	.‏جروح متعددة من الورق	Scared
+Rachel Green	Why hasn't he called Rachel? Why? Why? I don't understand. Why? He said he'll call. Why? Why? Chandler I'm telling you she has flipped out, she's gone crazy!	،(‏"لماذا لم يتصل يا (رايتشل "‏لا أفهم لماذا؟ قال إنه سيتصل، لماذا؟ ،‏"تشاندلر"، أقول لك .‏لقد فقدت صوابها، لقد جُنت	Scared
+Chandler Bing	Oh, well give me the phone then.	.‏أعطيني الهاتف إذاً	Mad
+Rachel Green	Come on, this isn't funny. She thinks it's my fault that you haven't called her. You have to call her!	‏هيا، هذا ليس مضحكاً، تعتقد أنها .‏غلطتي أنك لم تتصل، لابد أن تتصل بها	Scared
+Chandler Bing	Look, you can't call somebody after this long just to say, 'In case you didn't notice, I don't like you!'	‏لا يمكن أن تتصلي بشخص ‏بعد مرور هذه المدة الطويلة لتقولي ،‏"في حالة أنك لم تلاحظي ".‏فأنت لا تعجبينني	Mad
+Rachel Green	Well then you're going to have to take her out again.	.‏إذاً ستضطر لأن تخرج معها مرة ثانية	Powerful
+Chandler Bing	Nooo!! She's really dull! And she gets this gross mascara goop thing in the corner of her eye!	‏كلّا، إنها مملة جداً ‏وفي طرف عينها طبقة ‏سميكة مقززة من مكثف الأهداب	Mad
+Rachel Green	I don't care! I don't care! You are going to have to take her out again and end it, and end it in way that she knows it's actually ended. And, I don't care how hard it is for you, do not tell her that you will call her again!	،‏لا يهمني ‏ستضطر لأن تخرج معها ثانية ‏وتنهي الأمر، وتنهيه بطريقة .‏توضح لها أن الأمر انتهى بالفعل ،‏ولا يهمني كم هو صعب عليك .‏لا تقل لها إنك ستتصل بها ثانياً	Mad
+Chandler Bing	All right! Fine! But it's just a lunch date, no more than an hour! And from now on I get my own dates, I don't want you setting me up with anybody ever again!	.‏موافق، لكن موعد غداء فقط ،‏لا يزيد عن ساعة .‏من الآن أحصل بنفسي على مواعيدي ‏لا أريدك أن تعرفيني .‏بأحد مرة أخرى أبداً	Mad
+Rachel Green	That's fine!	.‏هذا يناسبني	Mad
+Chandler Bing	That's just a lot of big talk, y'know.	.‏- تعرفين أن هذا مجرد كلام فارغ	Scared
+Rachel Green	I know.	.‏- تعرفين أن هذا مجرد كلام فارغ .‏- أعرف ذلك	Mad
+
+Monica Geller	How about Mockolate mousse?	"ما رأيك في "موس موكولا -	Neutral
+Phoebe Buffay	It's not, it's not very Thanksgiving-y.	لا توصي كثيراً بعيد الشكر -	Mad
+Monica Geller	Ok, how about pilgrim Mockolate mousse?	ماذا عن موس الحجاج بالموكولا؟ - ما ستكون ميزتها؟ -	Neutral
+Phoebe Buffay	What makes it pilgrim?	ما ستكون ميزتها؟ -	Neutral
+Monica Geller	We'll put buckles on it.	سنضع الحلى المعدنية عليها	Joyful
+Rachel Green	Hey.	مرحباً -	Neutral
+Phoebe Buffay	Hey.	مرحباً -	Neutral
+Monica Geller	Hey.	مرحباً -	Neutral
+Rachel Green	Did uh, Ross call?	هل اتصل (روس)؟ - لا، أنا آسفة -	Neutral
+Monica Geller	No, I'm sorry.	لا، أنا آسفة -	Sad
+Rachel Green	Why didn't he call? He's gonna stay with Julie, isn't he? He's gonna stay with her and she's going to be all, "Hi, I'm Julie, Ross picked me, and we're gonna to get married, have a lot of kids and dig up stuff together."	(لمَ لم يتصل؟ سيبقى مع (جولي أليس كذلك؟ سيبقى معها وهي لا تكفّ عن القول "مرحباً، أنا (جولي)، (روس) اختارني" وسنتزوج وننجب الكثير من الأولاد"	Mad
+Phoebe Buffay	No offense, but that sounds nothing like her.	لا تشعري بالإهانة لكنك لا تجيدين تقليدها	Powerful
+
+Ross Geller	Thanks, Gunther. Hey! Umm, can I get a napkin too?	،‏مرحباً ‏أيمكنني الحصول على منديل أيضاً؟	Peaceful
+Gunther	Oh, like you don't already have everything.	.‏كما لو أنك لا تملك كل شيء بالفعل	Neutral
+Phoebe Buffay	Ow! Ow!	ow	Joyful
+Rachel Green	Phoebe, your in pain, would you just go to the dentist, just go.	‏"فيبي" أنت تتألمين، هلَا تذهبين .‏إلى طبيب الأسنان؟ اذهبي فحسب	Sad
+Phoebe Buffay	All right, fine, fine, but if you're my next victim, don't come back as a poltergeist and like suck me into the TV set.	‏حسناً، لا بأس ‏لكن إن كنت الضحية التالية ‏فلا تعودي إليّ بهيئة شبح الضجيج .‏وتسحبيني إلى داخل التلفاز	Sad
+Rachel Green	I promise.	.‏أعدك بذلك	Peaceful
+Phoebe Buffay	Although, don't feel like you can't visit.	.‏لكن هذا لا يعني أنّه لا يمكنك زيارتي	Sad
+Joey Tribbiani	Hey, is, is, is Chandler here?	‏مرحباً، هل "تشاندلر" هنا؟	Joyful
+Ross Geller	No, no he's not.	.‏لا، ليس هنا	Joyful
+Monica Geller	You guys, Joey just saw Janice kissing her ex-husband.	"‏رأى "جوي" لتوّه "جانيس .‏تتبادل القبلات مع زوجها السابق	Mad
+Ross Geller	What? So what are you going to do? I mean how, how are you going to tell Chandler?	‏ماذا ستفعل؟ ‏كيف ستخبر "تشاندلر"؟	Scared
+Joey Tribbiani	Well, I was thinking about that and I, I think the best way would be, to not.	‏كنت أفكر في الأمر، وارتأيت .‏أن الطريقة الأنسب هي عدم إخباره	Scared
+Rachel Green	Joey, you can't keep this to yourself, if you know about this, you have to tell him.	،"‏لا يمكنك كتمان الأمر يا "جوي .‏إن كنت تعلم بالأمر فعليك إخباره	Neutral
+Joey Tribbiani	It'll kill him. I mean it'll, it'll just kill him.	.‏سيقضي هذا الخبر عليه	Mad
+Phoebe Buffay	Well, you could wait 'til I go to the dentist, maybe I'll kill him.	‏يمكنك الانتظار حتى أذهب .‏إلى طبيب الأسنان، لعلّني أقتله	Mad
+
+Rachel Green	Is that the heartbeat?	هل هذه دقات القلب؟ -	Joyful
+The Doctor	That's it.	هل هذه دقات القلب؟ -	Joyful
+Phoebe Buffay	Oh my God!	هذه هي - !يا للروعة -	Joyful
+Rachel Green	Oh wow! This is so cool.	!رائع، هذا جميل جداً -	Joyful
+The Doctor	Have we talked about the possibility of multiple births?	هل تحدّثنا عن إمكانية ولادة أكثر من طفل؟	Powerful
+Phoebe Buffay	Why don't take care of this one, and should I get pregnant again, I'll hold onto your card, okay?	لمَ لا نهتمّ بهذه الولادة وعندما أحمل مرة أخرى، سأتصل بك	Joyful
+The Doctor	No, I'm getting three separate heartbeats.	لا، أنا أسمع ثلاث دقات قلب منفصلة	Powerful
+Phoebe Buffay	Three? You guys were worried I wouldn't even have one!	ثلاثة؟ كنت قلقة من أنني لن أنجب سوى ولد واحد	Neutral
+
+Joey Tribbiani	Hey! Y'know how we ah, save all those chopsticks for no reason we get when we get Chinese food?	‏أتذكر تلك العيدان التي نحتفظ بها ‏بلا داع عندما نشتري طعاماً صينياً؟	Joyful
+Chandler Bing	Yeah.	‏- أجل؟	Powerful
+Joey Tribbiani	Well, now we got a reason.	‏- أجل؟ .‏- حسناً، أصبح لها داع الآن	Powerful
+Chandler Bing	What?	‏ما هو؟	Neutral
+Joey Tribbiani	Well, we're fashioning a very long poking device.	.‏سنقوم بتصميم أداة لكز طويلة جداً	Powerful
+Chandler Bing	All right.	.‏حسناً	Neutral
+Joey Tribbiani	Hey uh, what's a matter?	‏ما خطبك؟	Neutral
+Chandler Bing	I talked to Janice.	."‏- لقد تحدّثت إلى "جانيس	Neutral
+Joey Tribbiani	Oh my God, is she going back to him?	‏- يا للهول! هل سترجع إليه؟	Scared
+Chandler Bing	She doesn't know. Says she loves us both. Y'know I woke up this morning and I was in love, well I was happy. Y'know it serves me right for buying that twelve pack of condoms. And now I can't even return them, because she choked on the reciept!	.‏لا تعلم، تقول إنها مغرمة بكلينا ‏استيقظت هذا الصباح .‏وكنت مغرماً وسعيداً ‏أنا المخطىء لأنّني ابتعت علبة بها	Mad
+
+Monica Geller	Not yet! Not yet! Not yet! Not yet! Not yet! Not yet! Not yet! Not yet!	ليس بعد، ليس بعد ليس بعد، ليس بعد	Scared
+Rachel Green	Hello, Chip.	(مرحباً (تشيب -	Neutral
+Chip Matthews	Hey, Rach! How ya doin'?	مرحباً (رايتش)، كيف حالك؟ -	Powerful
+Rachel Green	I'm great! I'm great. I've got a great job at Bloomingdale's, have wonderful friends, and eventhough I'm not seeing anyone right now, I've never felt better about myself.	أنا بحال رائعة، لديّ عمل رائع في (بلومينغدال) لديّ أصدقاء رائعون ومع أنني لست أواعد أحداً حالياً لم أشعر بشعور أفضل من قبل	Joyful
+Chip Matthews	So ah, Monica ready yet?	هل (مونيكا) جاهزة؟	Neutral
+Rachel Green	She'll be out in a second. So, Chip, how's umm, Amy Welch?	ستخرج بعد قليل إذاً (تشيب)، كيف حال (آيمي ولش)؟	Peaceful
+Chip Matthews	Amy Welch? Wow! I haven't seen her since... So, Monica about ready?	...آيمي ولش)، لم أرها منذ) إذاً، هل (مونيكا) جاهزة؟	Powerful
+
+Ross Geller	Rach! Whoops! Rach, hey, open up, please!	!(رايتش) رايتش)! افتحي لي أرجوك؟) (عندما لا يسمح لك بالدخول يا (روس	Scared
+Rachel Green	When somebody does not buzz you in, Ross, that means go away. That doesn't mean please climb up the fire escape.	(عندما لا يسمح لك بالدخول يا (روس هذا يعني أن ترحل من هنا "ولا يعني "أرجوك تسلّق سلم النجاة -	Mad
+Ross Geller	I just wanna read something. It's your pro list.	أريد أن أقرأ لك شيئاً، إنها حسناتك -	Neutral
+Rachel Green	Not interested.	لا يهمني - لا بأس، لا بأس، أولاً -	Mad
+
+Ross Geller	Sorry I ah, I scared you in there.	.‏- آسف أنني أخفتك بالداخل	Peaceful
+Monica Geller	Oh, that's okay. By the way, I was just checking the shower massager.	.‏- لا عليك ،‏بالمناسبة .‏كنت فقط أتفقد أداة تدليك المرذاذ فقط	Peaceful
+Ross Geller	Yeah.	.‏أجل	Neutral
+Phoebe Buffay	Hey!	.‏- مرحباً .‏- حاولت الاتصال بك في عملك	Joyful
+Monica Geller	I tried to reach you at work. There's....been a fire.	.‏- حاولت الاتصال بك في عملك .‏لقد كان هناك حريق	Sad
+Phoebe Buffay	What?! Oh my... Oh my God!! What happened?!	‏ماذا؟ يا إلهي! ماذا حدث؟	Scared
+Ross Geller	Well, we believe it originated here. In the Aroma Room.	‏نعتقد أن الحريق .‏بدأ هنا في غرفة العطور	Neutral
+Phoebe Buffay	All right. Did everyone get out okay?	‏هل خرج الجميع سالمين؟	Scared
+Monica Geller	Well, the giraffe's okay. And so is the pirate.	.‏- الزرافة بخير، وكذلك القرصان ‏- ما هذا؟	Peaceful
+Phoebe Buffay	Ohh. What is this?	‏- ما هذا؟	Scared
+Ross Geller	No Phoebe, don't look! You don't want to see what's under there!!	،‏كلّا يا "فيبي"، لا تنظري .‏لا تريدين رؤية ما هو أسفل هذا	Scared
+Phoebe Buffay	Ohh, the-the Foster puppets!	.‏دمى التبني	Sad
+
+Ross Geller	I don't know what to do. What am I gonna do? I mean, this, this is like a complete nightmare.	لا أعرف ما أفعل، ماذا أفعل؟ أعني أن هذا كابوس فعلاً	Scared
+Chandler Bing	Oh, I know. This must be so hard. Oh, no. Two women love me. They're both gorgeous and sexy. My wallet's too small for my fifties, and my diamond shoes are too tight.	أعرف، لا بد من أن هذا صعب !يا إلهي! تحبني امرأتان كل منهما جميلة وجذابة ولا أملك ما يكفي من النقود لأواعدهما	Mad
+Joey Tribbiani	Hey, here's a thought, Ross.	(لديّ فكرة (روس - لا تلمس الكمبيوتر، لا تلمسه أبداً -	Peaceful
+Chandler Bing	Don't touch the computer. Don't ever touch the computer.	لا تلمس الكمبيوتر، لا تلمسه أبداً -	Mad
+Joey Tribbiani	Ross, listen. I got two words for you. Threesome.	اسمع (روس)، لديّ نصيحة لك العلاقة الثلاثية	Joyful
+Chandler Bing	Ok, all right, look. Let's get logical about this, ok? We'll make a list. Rachel and Julie, pros and cons. Oh. We'll put their names in bold, with different fonts, and I can use different colors for each column.	حسناً، لنفكر بمنطق، اتفقنا؟ سنعد لائحة بحسنات (رايتشل) و(جولي) وسيئاتهما سنكتب اسميهما بأحرف بارزة سوداء ومختلفة وأستطيع استخدام ألوان مختلفة لكل عامود	Peaceful
+Ross Geller	Can't we just use a pen?	ألا يمكننا استعمال القلم فحسب؟ -	Neutral
+Chandler Bing	No, Amish boy.	لا أيها الغبي الجاهل -	Joyful
+Joey Tribbiani	Ok, let's start with the cons, 'cause they're more fun. All right, Rachel first.	حسناً، لنبدأ بالسيئات فهي أكثر تسلية رايتشل) أولاً)	Neutral
+Ross Geller	I don't know. I mean, all right, I guess you can say she's a little spoiled sometimes.	لا أدري، حسناً، يمكننا القول إنها تكون مدلّلة أحياناً	Peaceful
+Joey Tribbiani	You could say that.	يمكنك قول ذلك -	Neutral
+
+Chandler Bing	My diary! My diary, that's brilliant. I should have told her it was my diary, she never would have made me read her my diary.	!دفتر يومياتي! دفتر يومياتي فكرة رائعة كان عليّ أن أقول لها إنه دفتر يومياتي	Joyful
+Monica Geller	You know, that's true. You'd be a great person to have around the day after an emergency.	هذا صحيح، أنت حتماً الشخص الذي يمكن الاعتماد عليه بعد وقوع الحادثة	Powerful
+Phoebe Buffay	I... I cannot believe Ross even made this list. What a dinkus.	لا أصدق أن (روس) أعدّ هذه اللائحة - أعلم - !يا له من مغفل	Scared
+Joey Tribbiani	Hey, cut him some slack. It was Chandler's idea.	!مهلاً عليه (كانت هذه فكرة (شاندلر	Neutral
+Phoebe Buffay	What?	ماذا؟ -	Neutral
+Monica Geller	What?	ماذا؟ -	Neutral
+Chandler Bing	Oh good, I was hoping that would come up.	رائع، كنت أنتظر أن يحصل هذا -	Joyful
+Monica Geller	This was your idea?	هل هذه كانت فكرتك؟ -	Neutral
+Phoebe Buffay	What were you thinking?	هل هذه كانت فكرتك؟ -	Neutral
+Chandler Bing	All right, let's get some perspective here, ok? These things, they happen for a reason.	حسناً، لنرى الأمور من هذا المنظار اتفقنا؟ هذه الأشياء تحصل لأجل سبب ما - !أجل، أنت -	Peaceful
+Monica Geller	Yeah. You!	!أجل، أنت -	Neutral
+Chandler Bing	All right, Pheebs, back me up here, ok? You believe in that karma crap, don't you?	حسناً، (فيبز) ساعديني هنا قليلاً أنت تؤمنين بالكرما، أليست كذلك؟	Scared
+Phoebe Buffay	Yeah, by the way, good luck in your next life as a dung beetle.	أجل، اسمع، نسيت أن أتمنى لك حظاً سعيداً في حياتك الثانية كخنفساء الروث	Neutral
+
+Monica Geller	Now, in some of these recipes, the quantities may seem just a little unusual, uh, like these coconut mockolate holiday nut bars. I've indicated four cups of coconut, and four cups of crushed nut, and only, uh, one tablespoon of mockolate.	قد تجد في بعض الوصفات أن كمية المكونات ليست متوازية أصابع "الموكولا" هذه مثلاً المكونة من جوز الهند والجوز استعملت 4 أكواب من جوز الهند و4 أكواب من الجوز المطحون وملعقة كبيرة من الماكوليت	Neutral
+Mr. Ratstatter	Doesn't matter.	ماذا؟ -	Neutral
+Monica Geller	What?	what	Scared
+Mr. Ratstatter	Our FDA approval didn't come through. Something about laboratory rats.	لم نحصل على موافقة دائرة الدواء والغذاء الأميركية، شيء يتعلّق بفئران المختبرات	Sad
+Monica Geller	Oh, gosh, I'm sorry.	يا إلهي! أنا آسفة -	Sad
+Mr. Ratstatter	Yeah, well, anyhoo, here is your check. Thank you for all the trouble you went through. Um, listen, you didn't eat a lot of it while you were cooking, did you?	أجل، على أي حال، إليك الشك - أشكر لك ما فعلته اسمعي، لم تتناولي الكثير منه وأنت تحضّرين الوصفة، أليس كذلك؟	Sad
+Monica Geller	Well, uh, I ate some.	في الواقع لقد تناولت البعض منه - البعض" هذا جيد، البعض جيد" -	Scared
+Mr. Ratstatter	Oh, some, that's fine. Some is fine. Some is not a lot. So, it doesn't burn when you pee, does it?	"البعض" لا تعني "الكثير"	Neutral
+
+Joanna	Did he call?	‏- هل اتصل؟ .‏- كلّا، آسفة	Scared
+Rachel Green	No. Sorry.	.‏- كلّا، آسفة	Sad
+Joanna	Why?! Why?! He said he'd call. Why hasn't he called?	‏لماذا؟ ‏قال إنه سيتصل، لماذا لم يتصل؟	Mad
+Sophie	Maybe he's intimated by really smart, strong, successful women.	‏ربما يخاف من النساء الذكيات .‏القويات الناجحات	Peaceful
+Joanna	Sophie, would you please climb out of my butt. Why hasn't he called, Rachel? Why?	،"‏"صوفي .‏هلّا تتركينني وشأني رجاء ‏- لماذا لم يتصل يا "رايتشل"؟	Mad
+Rachel Green	Okay, okay. Umm, well ah, maybe he, maybe he feels awkward because you are my boss.	‏- لماذا لم يتصل يا "رايتشل"؟ ...‏- حسناً، ربما .‏ربما يشعر بالإحراج لأنك مديرتي	Peaceful
+Joanna	Awkward? Why should he feel awkward?	‏- الإحراج؟ لماذا يشعر بالإحراج؟ ...‏- حسناً	Scared
+
+Rachel Green	Oh I'm sorry, we're clo-... Hey sailor.	...عذراً، لقد أقفلنا مرحباً أيها البحار	Neutral
+Ross Geller	Is this what you had in mind?	أهذا ما أردته؟	Neutral
+Rachel Green	I'll say.	أجل	Neutral
+Ross Geller	I'm shipping out tomorrow.	سأسافر غداً	Neutral
+Rachel Green	Well then uh, we better make this night count. Oh wait, I forgot to turn off the cappucino machine. Anchors away. Oh no no, my purse, my purse, my purse, my purse, my purse, my pu rse. Oh, you know what. I forgot to turn off the bathroom light.	من الأفضل أن نستفيد من هذه الليلة مهلاً، نسيت إطفاء ماكينة الكابوتشينو تمّ رفع المرساة !انتظر! حقيبتي، انتظر نسيت إطفاء الأنوار في الحمام	Neutral
+Ross Geller	Alright you know, why don't I just meet you upstairs.	لمَ لا توافيني إلى الطابق العلوي فحسب	Neutral
+
+Ross Geller	She doesn't know which one of us she wants, me or this Colin guy.	إنها لا تعرف أي واحد منا تريد (أنا أو الشاب المدعو (كولن	Joyful
+Monica Geller	This isn't how it's supposed to go, there can't be another guy.	هذا ليس ما كان يفترض أن يحدث	Joyful
+Ross Geller	Well...	well	Peaceful
+Monica Geller	Of course there's another guy!! This is even more perfect! Now you have to prove your love!	طبعاً، ثمة شاب آخر هذا أفضل، عليك أن تثبت حبّك لها	Powerful
+Ross Geller	I'm not proving anything. Okay, I'm done listening to you. If I hadn't let you talk me into going to the airport in the first place, I never would've put my fist through the wall!	لن أبرهن أي شيء لن أستمع إليك بعد الآن لو لم أسمح لك بإقناعي بالذهاب إلى المطار لما كنت ضربت الجدار بيدي -	Powerful
+Chandler Bing	You put your fist through the wall?	ضربت الجدار بيدك؟ -	Joyful
+Ross Geller	No, I missed and hit the door. But, it opened really hard!	لا، أخطأت وأصبت الباب لكنه فتح بقوة	Sad
+Monica Geller	You have to go to London!	(عليك أن تذهب إلى (لندن -	Joyful
+Ross Geller	What?	ماذا؟ -	Scared
+Monica Geller	Yeah, you have to go fight for her!	نعم، عليك أن تذهب لتقاتل من أجلها	Mad
+Joey Tribbiani	Oh yeah, sure, that makes sense. Yeah. 'Cause you already told her you love her and she didn't say it back, then she called you and told you that there's another guy, so yeah, go to London that'll scare her!	نعم، طبعاً، هذا يبدو منطقياً لأنك أخبرتها أنك تحبّها وهي لم تجب ثم اتصلت بك وقالت لك إنه ثمة شاب آخر، نعم اذهب إلى (لندن)، هذا سيخيفها	Neutral
+Monica Geller	When Rachel was with Paulo, what did you do?	(عندما كانت (رايشل) مع (باولو ماذا فعلت؟	Sad
+Ross Geller	I made fun of his accent.	سخرت من لكنته	Joyful
+Monica Geller	You sat back and let him have her, you didn't fight at all. Am I right? Do you want the same thing to happen with Emily?	تراجعت وتركته يأخذها لم تقاتل من أجلها أبداً، أليس كذلك؟ أتريد أن يحدث الامر نفسه مع (أيميلي)؟	Sad
+Ross Geller	No.	no	Neutral
+Monica Geller	All right then, go fight for her! Go to London! I mean, that could be you and Emily! That, but-but nicer. Just, go to London!	إذاً، اذهب وقاتل من أجلها (اذهب إلى (لندن يمكن أن يكون هذان الشخصان !(أنت و(أيميلي هكذا ولكن... لكن أفضل (اذهب إلى (لندن	Peaceful
+Ross Geller	Really?	حقاً؟	Scared
+Monica Geller	Come on! Surprise her! Show up at her doorstep! Don't let her go without a fight!	هيا، فاجئها، اذهب إلى مدخل بيتها ولا تدعها تفلت من يدك بسهولة	Mad
+Ross Geller	All right. All right, I'm gonna do it!	حسناً، حسناً، سأفعل هذا - حسناً -	Peaceful
+Monica Geller	All right.	حسناً -	Neutral
+Ross Geller	I'm gonna, I'm gonna go to London and I'm going to fight for her.	(سوف أذهب إلى (لندن وسأقاتل من أجلها	Scared
+Monica Geller	Okay, good luck!	حسناً، حظاً موفقاً	Neutral
+Joey Tribbiani	Ross! Ross! If you're going to the airport, could you pick me up another one of those Toblerone bars?	إن كنت ستذهب إلى المطار أيمكنك أن تحضر لي علبة (أخرى من شوكولا (تولبورون	Neutral
+
+Rachel Green	So uh, Ryan, were you shipping off to?	إلى أين تسافر يا (راين)؟ - لا أستطيع أن أقول -	Joyful
+Ryan	I really can't say.	لا أستطيع أن أقول -	Neutral
+Ross Geller	So do you have like any nuclear weapons on board?	هل تحملون أسلحة نووية على متن السفينة؟	Joyful
+Ryan	I can't say.	لا أستطيع أن أقول -	Neutral
+Rachel Green	Well do you get to look through one of those like, those periscope thingys.	لا أستطيع أن أقول - هل ترى خلال أجهزة البيريسكوب؟ -	Joyful
+Ryan	I'm sorry, but I can't say.	عذراً، لا أستطيع أن أجيب -	Neutral
+Ross Geller	Wow, it, it's neat learning about submarines.	عذراً، لا أستطيع أن أجيب - هذه معلومات دقيقة عن الغواصات -	Joyful
+Ryan	I better get out of here, I'm gonna miss my flight.	من الأفضل أن أذهب، سأفوّت الطائرة - سأرافقك إلى الخارج -	Neutral
+Phoebe Buffay	Ok, I'll walk you out.	سأرافقك إلى الخارج -	Neutral
+
+Richard Burke	Monica, wake up. Monica.	!(مونيكا) استيقظي، (مونيكا)؟ - ما الأمر؟ -	Neutral
+Monica Geller	What's up?	ما الأمر؟ -	Neutral
+Richard Burke	I thought of a thing.	لقد تذكرت شيئاً	Neutral
+Monica Geller	Yeah?	حقاً؟ - نعم -	Neutral
+Richard Burke	Yeah. I have to sleep, have to, on this side of the bed.	حقاً؟ - نعم - يجب أن أنام في هذه الجهة من السرير	Neutral
+Monica Geller	No honey. You have to sleep on this side of the bed because I have to sleep on this side of the bed.	لا حبيبي، عليك أن تنام في هذه الجهة لأنه عليّ أن أنام في هذه الجهة من السرير	Mad
+Richard Burke	Or so I would have you believe.	يجب أن تصدقي	Neutral
+Monica Geller	No. Big deal, so you have a side of the bed, everybody has a side of the bed.	هذه ليست مشكلة لديك جهة مفضلة من السرير الجميع لديهم جهة مفضلة من السرير -	Peaceful
+Richard Burke	Hey come on, you haven't heard my reason yet.	الجميع لديهم جهة مفضلة من السرير - مهلاً، لم تعرفي ما هو السبب بعد -	Mad
+Monica Geller	Alright, go on.	ما هو؟ -	Neutral
+Richard Burke	Ok, I have to sleep on the west side because I grew up in California and otherwise the ocean would be on the wrong side.	يجب أن أنام في الجهة الغربية (لأنني ترعرعت في (كاليفورنيا وإن لم أفعل سيكون المحيط في الجهة الخاطئة	Neutral
+Monica Geller	Oh my God, you're a freak.	!يا إلهي، إنك مهووس -	Joyful
+Richard Burke	Yeah. How 'bout that.	نعم - ما رأيك بذلك؟	Neutral
+
+Chandler Bing	OH MY GOD!!!	!يا للهول	Powerful
+Joey Tribbiani	WHAT?!!	ماذا؟	Scared
+Chandler Bing	Are you all right?!	هل أنت بخير؟ -	Scared
+Joey Tribbiani	Yeah...	نعم -	Powerful
+Chandler Bing	What happened?!!	ماذا حصل؟	Scared
+Joey Tribbiani	Awww, man! He promised he wouldn't take the chairs!!	وعدني بأنه لن يأخذ الكراسي	Mad
+Chandler Bing	What the hell happened?!! How were you locked in?!! And where the hell is all of our stuff?!!	ماذا حصل؟ كيف حبست في الداخل؟ وأين هي أغراضنا؟	Mad
+Joey Tribbiani	Well, this guy came by to look at the unit and-and he said he didn't think big enough to fit a grown man!	أتى رجل ليرى الوحدة، وقال إنه لا يظن أنها كبيرة كفاية لتسع رجلاً بالغاً	Scared
+Chandler Bing	So-You got in voluntarily?!	هل دخلت بكامل إرادتك؟ -	Mad
+Joey Tribbiani	I was tryin' to make a sale!! Oh, man, if I ever run into that guy again, do you know what I'm gonna do?	هل دخلت بكامل إرادتك؟ - كنت أحاول أن أبيع الوحدة - إن التقيت بهذا الرجل مجدداً أتعرف ما سأفعل؟	Peaceful
+Chandler Bing	BEND OVER?!!!	هل تنحني له؟	Mad
+
+Chandler Bing	It's not a big deal. It's, just it's right here, and it's all the time.	‏ليست أمراً مهماً، إنها فقط هنا .‏وموجودة طيلة الوقت	Neutral
+Joanna	Well, thanks again for lunch.	.‏شكراً مرة ثانية على الغداء	Joyful
+Chandler Bing	Yes, this, this was pleasant.	.‏- أجل، كان ذلك لطيفاً	Neutral
+Joanna	It was, wasn't it?	.‏- كان كذلك، بالفعل	Joyful
+Chandler Bing	The food there was, was great.	.‏- كان الطعام رائعاً	Joyful
+Joanna	Wasn't it?	‏- أليس كذلك؟	Joyful
+Chandler Bing	So take care.	.‏- إذاً اعتني بنفسك	Neutral
+Joanna	You too.	.‏- وأنت أيضاً	Joyful
+Chandler Bing	Well, this was great. I'll give you a call. We should do it again sometime.	،‏كان هذا رائعاً، سأتصل بك .‏يجب أن نكررها في وقت ما	Joyful
+Joanna	Great! I'm looking forward to it. Rachel, any messages?	،‏رائع! أتطلع لذلك ‏"رايتشل"، أيوجد أي رسائل لي؟ ."‏على مكتب "صوفي	Joyful
+Rachel Green	Sophie's desk.	."‏على مكتب "صوفي	Neutral
+
+Monica Geller	Hello?	مرحباً؟ - مرحباً -	Neutral
+Ross Geller	Hi.	hi	Neutral
+Rachel Green	Is that him again? Tell him I'd come to the phone, but my ankles are weighin' me down.	هل هذا هو مجدداً؟ أخبريه أنني كنت أود التكلّم معه لكنني لا أستطيع ذلك لأن كاحليّ ثقيلان	Peaceful
+Monica Geller	Listen, I... I don't think this is the best time.	اسمع، لا أعتقد أن هذا هو الوقت المناسب	Neutral
+Ross Geller	Look, can, can you do something for me?	اسمعي، هل يمكنك أن تفعلي شيئاً من أجلي؟	Scared
+Monica Geller	Sure, what? Ok, ok. Music?	طبعاً، ماذا؟	Powerful
+
+Chandler Bing	Janice, I have something I need to tell you, and I want you to let me get through it, because it's, it's, it's not gonna be easy.	"‏أريد أن أخبرك أمراً يا "جانيس ‏ولا أريدك أن تقاطعيني .‏- لأنّه لن يكون سهلَاً .‏- حسناً	Scared
+Janice Litman Goralnik	Okay.	.‏- حسناً	Neutral
+Chandler Bing	I think you should go back with Gary. I don't wanna be the guy that breaks up a family, y'know when my parents split up, it was because of that guy. Whenever I would see him I was always think y'know 'You're the reason, you are the reason why their not together.' and I hated that guy. And it didn't matter how nice he was, or how happy he made my Dad.	."‏أظن أن عليك العودة إلى "غاري ‏لا أريد أن أكون الشخص .‏الذي يهدم شمل عائلة .‏انفصل والداي بسبب شخص كهذا ‏كلما كنت أراه، كنت دائماً .‏أفكر في أنه سبب انفصالهما .‏كنت أكره ذاك الرجل ‏قلّما كان يهمني لطفه .‏أو مدى السعادة التي منحها لوالدي	Powerful
+Janice Litman Goralnik	Wow!	!‏- يا للهول	Scared
+Chandler Bing	Yeah, well. It's the right thing to do.	!‏- أجل .‏إنه الصواب	Powerful
+Janice Litman Goralnik	Oh! You're right. Oh God. But, before I can say 'good-bye', there's something I really need you to know, Chandler. The way I feel about you, it's like, I finally understand what Lionel Richie's been singing about. Y'know, I mean what we have, it's like movie love, you're my soulmate, and I can't believe we're not going to be spending the rest of our lives together.	!‏أنت محق ‏يا إلهي! لكن قبل أن أقول وداعاً "‏أريدك أن تعرف أمراً يا "تشاندلر ‏شعوري تجاهك ‏جعلني أفهم أخيراً ."‏معنى أغنية "ليونيل ريتشي ‏ما يجمعنا يحاكي الحب .‏الذي نشاهده في الأفلام .‏أنت توأم روحي ‏ولا أصدّق أنّنا .‏لن نمضي بقية حياتنا معاً	Sad
+Chandler Bing	Then don't leave me!	.‏- لا تتركيني إذاً	Scared
+Janice Litman Goralnik	What?	‏- ماذا؟	Scared
+Chandler Bing	Forget what I said, I was babbling! Pick me!	،‏انسي ما قلته، كنت أهذي !‏اختاريني أنا	Scared
+Janice Litman Goralnik	No, you were right, you were right. I mean, I-I-I've got to give my marriage another chance.	!‏لا، كنت محقاً .‏عليّ أن أعطي زواجي فرصة أخرى	Sad
+Chandler Bing	No you don't! No, no, no, I say you have to give your divorce another chance.	!‏لا، ليس عليك هذا ‏بل عليك أن تعطي .‏طلاقك فرصة أخرى	Scared
+Janice Litman Goralnik	I'm sorry.	i am sorry	Sad
+Chandler Bing	Ohhh. Don't go.	.‏- لا ترحلي	Scared
+Janice Litman Goralnik	No, I-I-I gotta go.	.‏- عليّ الرحيل	Scared
+Chandler Bing	No. No! No! No!	!‏لا	Scared
+Janice Litman Goralnik	Honey, honey, people are looking.	.‏- حبيبي، الناس يحدّقون بنا	Peaceful
+Chandler Bing	I don't care! I don't care!!	!‏- لا يهمّني	Scared
+Janice Litman Goralnik	Yeah, um, I'm, I'm leaving now.	.‏حسناً، سأغادر الآن	Powerful
+Chandler Bing	You can't leave! I have your shoe!	‏لا يمكنك المغادرة !‏فحذاؤك معي	Sad
+
+Joey Tribbiani	All right now remember, something this big and long is going to be difficult to manuver, fortunately I have a lot of experience in that area.	.‏بشيء بهذا الحجم وبهذا الطول ‏لحسن حظي أنني أتمتع	Scared
+Ross Geller	Can we please focus here, a naked man's life hangs in the balance!	!‏هلَا تركزون .‏فحياة رجل عار على المحك	Scared
+Phoebe Buffay	I'm telling you he's dead. What we are about to have here is a dead fat guy on a stick.	.‏أؤكد لكم أنه ميت ‏ما سنحصل عليها هو جثة !‏رجل سمين مغروزة فيها عصا	Scared
+Joey Tribbiani	All right, ladies and gentlemen, let's poke. Steady. Steady. Okay, a little higher. Careful of the angle. Okay, okay, we're approaching the window Thread the needle. Thread the needle.	.‏سيداتي وسادتي لنبدأ اللكز ،‏اثبتوا .‏حسناً، قليلاً إلى الأعلى ،‏انتبهوا إلى الزاوية .‏حسناً .‏نحن نقترب من النافذة .‏الكزوه بالإبرة	Scared
+Phoebe Buffay	He's alive! He's a-live!!!	!‏إنه حي	Scared
+Monica Geller	And yet, we're still poking him.	.‏ومع ذلك نواصل لكزه	Scared
+Joey Tribbiani	Okay, retract the device, retract the device.	!‏حسناً، اسحبوا الأداة	Scared
+Ross Geller	He does not look happy.	.‏لا يبدو سعيداً	Scared
+Rachel Green	Hey-hey, now he's showing us his poking device.	.‏لا يبدو سعيداً .‏ها هو الآن يرينا أداة اللكز خاصته	Scared
+Joey Tribbiani	Hey, that's never gonna make it all the way over here, buddy!	!‏لن يصل أبداً إلى هنا يا صاح	Powerful
+
+Joey Tribbiani	Hey. Mr. Douglas is looking for you.	مرحباً، سيد (دوغلاس) يبحث عنك لماذا؟ لماذا يبحث عني	Neutral
+Chandler Bing	Why? Wh- wh- why is Mr. Douglas looking for me?	لماذا؟ لماذا يبحث عني السيد (دوغلاس)؟	Scared
+Joey Tribbiani	'Cause he has a strong suspicion that you dropped the ball on the Lender project.	لأن لديه شكاً كبيراً بأنك أهملت مشروع الجلد	Powerful
+Chandler Bing	Wha- wh- why, why, why does he suspect that?	لماذا؟ لمَ يشك بذلك؟	Scared
+Joey Tribbiani	Becasue at first he thought it was Joseph. But after he asked Joseph about it, turns out it was you. Anyway, I just thought you should know.	(لأنه في البداية قد شك بـ(جوزيف لكن بعد أن سأل (جوزيف) عما حصل تبيّن أنك الفاعل فكرت بأنه عليك أن تعرف ذلك	Neutral
+Chandler Bing	Alright, that's it. Look Joey, I'm sorry, I realize this is the role of a lifetime for ya, and if I could just fire Joseph, I would, but unfortunately that's not possible so I'm gonna have to let both of you go.	فكرت بأنه عليك أن تعرف ذلك !لقد طفح الكيل اسمع (جوي)، إنني آسف أعرف أن هذا أبرز دور تؤديه في حياتك (ولو كان بوسعي أن أطرد (جوزيف لما ترددت للحظة إنما لسوء الحظ أن ذلك غير ممكن لذا سأضطر إلى طردكما معاً	Powerful
+Joey Tribbiani	What're you talking about, everybody loves Joseph.	ما الذي تقوله؟ (الجميع يحبون (جوزيف	Neutral
+Chandler Bing	I don't, I hate Joseph, ok. I think he's a brown-nosing suck up.	(لا أحبه، أنا أكره (جوزيف أظن أنه ماكر ومخادع	Mad
+Joey Tribbiani	Oh yeah. Well you can't fire Joseph. You know why, 'cause he's not in your department.	(حقاً؟ لا يمكنك أن تطرد (جوزيف أتعرف ما السبب؟ لأنه لا يعمل في قسمك	Neutral
+
+Joey Tribbiani	Hey.	.مرحباً -	Neutral
+Ross Geller	Hi.	hi	Neutral
+Joey Tribbiani	Hey.	.مرحباً -	Joyful
+Ross Geller	Hi.	hi	Neutral
+Joey Tribbiani	Hey.	.مرحباً -	Joyful
+
