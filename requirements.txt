@@ -1,0 +1,8 @@
+arabic_reshaper==2.1.4
+contractions==0.1.73
+jiwer==2.5.1
+natsort==8.2.0
+numpy==1.23.2
+pandas==1.5.0
+tqdm==4.64.1
+Unidecode==1.3.6
